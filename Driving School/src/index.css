@@ -6,6 +6,13 @@
   font-family: "Quicksand";
   color: #333;
 }
+.LPlate{
+  width: 40%;
+  height: auto;
+  z-index: 0; /* Set a lower z-index for the image */
+  transform: rotate(-35deg);
+}
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -28,6 +35,30 @@
 .navbar a:hover {
   color: #ff0606;
 }
+
+.links {
+  display: flex;
+}
+
+.links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.links a:last-child {
+  background-color: #ff0000;
+  color:#fafafa;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.links a:last-child:hover {
+  background-color: #050404;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
 .content {
   max-width: 600px;
   margin: 40px auto;
