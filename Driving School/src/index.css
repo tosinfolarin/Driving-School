@@ -1,27 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
+
 
 /* base styles */
 * {
-  margin: 0;
-  font-family: "Quicksand";
-  color: #333;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
 }
-.LPlate{
-  width: 40%;
+
+.LPlate {
+  width: 15%;
   height: auto;
   transform: rotate(-35deg);
+  margin-right: 300px;
+  position: relative;
+  top: 60px;
+
+}
+
+.BusinessName{
+  position: relative;
+  bottom: 50px;
 }
 
 .navbar {
-  padding: 20px;
+  padding: 5px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  /* max-width: 800px; */
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
   color: #ff0000;
+  position: relative;
+  right: 28px;
+  
 }
 .navbar .links {
   margin-left: auto;
@@ -31,6 +46,7 @@
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
   color: #ff0606;
 }
@@ -50,6 +66,7 @@
   color:#fafafa;
   padding: 6px 12px;
   border-radius: 8px;
+  
 }
 
 .links a:last-child:hover {
@@ -58,11 +75,14 @@
   border-radius: 8px;
 }
 
-.content {
+/* .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-}
+} */
+
+
+
 
 /* blog previews / list */
 .blog-preview {
@@ -80,6 +100,8 @@
 }
 
 
+
+
 .booking-container {
   position: relative;
   text-align: center;
@@ -87,7 +109,7 @@
 
 .book-now-text {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 0, 0);
@@ -101,20 +123,24 @@
 }
 
 .car-book-image {
-  width: 40%;
+  width: 20%;
   height: auto;
+  transform: rotate(-1deg);
   z-index: 0; /* Set a lower z-index for the image */
 }
 
 
 
-
-
 /* FAQs Page Styling */
+
+.FAQs {
+  color: black;
+  padding-bottom: 10px;
+}
 
 .dropbtn {
   background-color:  rgb(255, 0, 0);
-  /* color: white; */
+  color: white;
   padding: 8px 12px;
   border: none;
   border-radius: 4px;
@@ -150,4 +176,60 @@
 .downarrow img {
   max-width: 10px;
   margin-right: 10px;
+}
+
+
+/* PRICING STYLING */
+
+.Pricing {
+  text-align: left;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid rgb(255, 0, 0);
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+
+/* FOOTER */
+
+.Footer {
+  position: absolute; /*Absolute */
+  font-size: 10px;
+  width: 100%;
+  background-color: #b85757; 
+  color: #ffffff; 
+  margin-top: 50px;
+  padding: 10px; 
+}
+
+.WhatsappLogo {
+  position: relative;
+  top: 3px;
+  width: 20px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.EmailLogo {
+  /* padding-top:px; */
+  width: 20px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.InstagramLogo {
+  position: relative;
+  top: 3px;
+  width: 20px;
+  height: auto;
+  mix-blend-mode: multiply;
 }

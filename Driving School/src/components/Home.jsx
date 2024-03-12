@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <h3>Creating Safe Drivers of Tomorrow</h3>
+        <h3>Safe Teaching for Safe Driving </h3>
      );
 }
  

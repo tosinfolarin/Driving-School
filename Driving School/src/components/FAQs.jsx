@@ -4,6 +4,7 @@
 import {useState} from "react";
 
 const FAQs = () => {
+
     const initialDropdowns = [
         { isOpen: false, question: "How many lessons would it take for me to be ready to take a driving test?", answer: "According to the Driving Standards Agency (DSA), the average time would be 45 hours of professional lessons, supplemented with around 20 hours of private practice." },
         { isOpen: false, question: "How do I know I can trust Trinity Driving School?", answer: "To find a good instructor, it is important to look for driving instructors who are registered with the DVSA and display a green badge in their vehicle. At Trinity we pride ourselves in ensuring instructors are DVSA registered and regularly undergo training." },
@@ -28,6 +29,7 @@ const FAQs = () => {
 
     return (
         <div>
+            <h1 className="FAQs">Frequently Asked Questions</h1>
             {dropdowns.map((dropdown, index) => (
                 <li className="dropdown-item" key={index}>
                     <button className="dropbtn" onClick={() => toggleDropdown(index)}>
