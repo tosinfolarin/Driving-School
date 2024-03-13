@@ -16,20 +16,22 @@
   margin-right: 300px;
   position: relative;
   top: 60px;
+  right: 150px;
 
 }
 
 .BusinessName{
   position: relative;
   bottom: 50px;
+  right: 150px;
 }
 
 .navbar {
-  padding: 5px;
+  /* padding: 5px; */
   display: flex;
   align-items: center;
   /* max-width: 800px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
@@ -40,6 +42,8 @@
 }
 .navbar .links {
   margin-left: auto;
+  position: relative;
+  right: 150px;
 }
 .navbar a {
   margin-left: 16px;
@@ -75,11 +79,7 @@
   border-radius: 8px;
 }
 
-/* .content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-} */
+
 
 
 
@@ -178,7 +178,6 @@
   margin-right: 10px;
 }
 
-
 /* PRICING STYLING */
 
 .Pricing {
@@ -199,16 +198,48 @@
 } 
 
 
+/* TEST QUESTIONS PAGE */
+
+.flex-test {
+  display: flex;
+}
+
+.flex-one {
+  flex: 1;
+  /* border: 2px solid rgb(240, 62, 17); */
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+
+.testVid {
+  border: none;
+  position: relative;
+  top: 90px;
+
+}
+.testText {
+  border: none;
+  position: relative;
+  top: 10px;
+
+} 
+
+
 /* FOOTER */
 
 .Footer {
-  position: absolute; /*Absolute */
+  position: absolute;
   font-size: 10px;
   width: 100%;
-  background-color: #b85757; 
+  background-color: #ce3f3f; 
   color: #ffffff; 
   margin-top: 50px;
   padding: 10px; 
+  left: 0;
+  right: 0;
 }
 
 .WhatsappLogo {
@@ -220,7 +251,6 @@
 }
 
 .EmailLogo {
-  /* padding-top:px; */
   width: 20px;
   height: auto;
   mix-blend-mode: multiply;

@@ -12,7 +12,7 @@ const Pricing = () => {
             <div className="flex-child magenta">
             
                 <br/>
-                INTRODUCTION: £95 
+                INTRODUCTION: £90 
                 <br/>
                 <br/>
                 SIX: 45 minute lessons
@@ -22,15 +22,18 @@ const Pricing = () => {
         
     
             <div className="flex-child green">
-                Hourly Rate: £22
+                Hourly Rate: £35
                 <br/>
                 <br/>
                 OFFERS: BLOCK BOOKINGS
                 <br/><br/>
-                10 Lessons - £210
+                6 Lessons - £195
                 <br/>
                 <br/>
-                5 Lessons - £107.50
+                12 Lessons - £384
+                <br/>
+                <br/>
+                20 Lessons - £630
             </div>
         
         </div>

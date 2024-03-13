@@ -3,18 +3,20 @@ import './App.css';
 // import Home from './components/Home';
 // import BookNow from './components/BookNow';
 // import FAQs from './components/FAQs';
-import Pricing from './components/Pricing';
+// import Pricing from './components/Pricing';
 
 import Homepage from './components/Homepage';
-import FAQs from './components/FAQs';
+// import FAQs from './components/FAQs';
 import Footer from './components/Footer';
+import ShowMeTellMe from './components/SmeTme';
 
 function App() {
   return (
     <div>
       <Homepage/>
-      <Pricing/>
-      <FAQs/>
+      {/* <Pricing/>
+      <FAQs/> */}
+      <ShowMeTellMe/>
       <Footer/>
     </div>
     
