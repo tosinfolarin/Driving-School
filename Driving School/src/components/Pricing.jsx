@@ -3,35 +3,33 @@ const Pricing = () => {
 
     <div>
         <div className="Pricing">
-           <h1> PRICING </h1> 
+           <h1> PRICE LIST </h1> 
+           <h4> Hourly Rate: £35 per hour</h4>
         </div>
 
         
-        <div className="flex-container">
 
-            <div className="flex-child magenta">
+        
+        <div className="flex-pcontainer">
+
+            <div className="flex-pchild box1">
             
+        
+                <div className="p-heading">INTRODUCTION: £90 </div>
                 <br/>
-                INTRODUCTION: £90 
                 <br/>
-                <br/>
-                SIX: 45 minute lessons
+                FOUR: 45 minute lessons <br/>
                 An introductory course to get you started<br/>
                 (This works out to be 3 Double lessons)
             </div>
         
     
-            <div className="flex-child green">
-                Hourly Rate: £35
-                <br/>
-                <br/>
-                OFFERS: BLOCK BOOKINGS
+            <div className="flex-pchild box2">
+                <div className="p-heading">OFFERS: BLOCK BOOKINGS</div>
                 <br/><br/>
                 6 Lessons - £195
                 <br/>
-                <br/>
                 12 Lessons - £384
-                <br/>
                 <br/>
                 20 Lessons - £630
             </div>

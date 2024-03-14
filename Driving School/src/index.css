@@ -17,7 +17,6 @@
   position: relative;
   top: 60px;
   right: 150px;
-
 }
 
 .BusinessName{
@@ -27,7 +26,6 @@
 }
 
 .navbar {
-  /* padding: 5px; */
   display: flex;
   align-items: center;
   /* max-width: 800px; */
@@ -61,29 +59,27 @@
 
 .links a {
   color: #000000;
-  text-decoration: none;
   margin-right: 10px;
 }
 
 .links a:last-child {
-  background-color: #ff0000;
+  background-color: #000000;
   color:#fafafa;
-  padding: 6px 12px;
+  padding: 6px 18px;
   border-radius: 8px;
   
 }
 
 .links a:last-child:hover {
-  background-color: #050404;
-  padding: 6px 12px;
+  background-color: #ff0000;
+  padding: 8px 20px;
   border-radius: 8px;
+  transition: 0.6s;
 }
 
-
-
-
-
-
+.book-now-text:hover{
+  color:rgb(255, 0, 0);
+}
 /* blog previews / list */
 .blog-preview {
   padding: 10px 16px;
@@ -109,13 +105,14 @@
 
 .book-now-text {
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 50%;
+  left: 55;
   transform: translate(-50%, -50%);
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 24px;
   padding: 10px;
-  z-index: 1; /* Set a higher z-index for the text */
+  z-index: 1; /* Sets a higher z-index for the text */
+  text-decoration: none;
 }
 
 .car-image-container {
@@ -126,7 +123,7 @@
   width: 20%;
   height: auto;
   transform: rotate(-1deg);
-  z-index: 0; /* Set a lower z-index for the image */
+  z-index: 0; /* Sets a lower z-index for the image */
 }
 
 
@@ -158,10 +155,9 @@
   border-radius: 3px;
   background-color: #ffffffea;
   padding: 2px;
-  padding-left: 50px;
-  width: 597px;
   transition: max-height 1s ease;
 }
+
 
 .dropdown-content.show {
   max-height: 100px;
@@ -184,18 +180,27 @@
   text-align: left;
 }
 
-.flex-container {
+.flex-pcontainer {
   display: flex;
+  
 }
 
-.flex-child {
+.flex-pchild {
   flex: 1;
-  border: 2px solid rgb(255, 0, 0);
+  /* background-color: rgb(255, 0, 0, 0.5); */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px
+  
 }  
 
-.flex-child:first-child {
+.flex-pchild:first-child {
   margin-right: 20px;
 } 
+
+.p-heading{
+  font-weight: bold;
+  font-size: 25px;
+}
 
 
 /* TEST QUESTIONS PAGE */
@@ -217,7 +222,7 @@
 .testVid {
   border: none;
   position: relative;
-  top: 90px;
+  top: 95px;
 
 }
 .testText {
