@@ -1,12 +1,13 @@
 .t-container{
     width: 500px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     background: white;
     color: black;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 5px; */
     border-radius: 10px;
     padding: 40px 50px;
 }
@@ -18,7 +19,7 @@
 }
 
 .t-container h2{
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 500;
 
 }
@@ -30,7 +31,7 @@
     padding-left: 10px;
     border: 1px solid gray;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -51,9 +52,9 @@
 }
 
 .correct{
-    background: rgb(74, 255, 74);
+    background: rgb(46, 255, 46);
 }
 
 .incorrect{
-    background: rgb(247, 112, 112);
+    background: rgb(255, 146, 146);
 } 
