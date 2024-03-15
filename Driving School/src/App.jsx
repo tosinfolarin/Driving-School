@@ -4,6 +4,7 @@ import './App.css';
 // import BookNow from './components/BookNow';
 // import FAQs from './components/FAQs';
 import Pricing from './components/Pricing';
+// import Quiz from './components/Quiz';
 
 import Homepage from './components/Homepage';
 import FAQs from './components/FAQs';
@@ -17,6 +18,7 @@ function App() {
       <Pricing/>
       <FAQs/>
       <ShowMeTellMe/>
+    
       <Footer/>
     </div>
     

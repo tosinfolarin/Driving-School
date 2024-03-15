@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
+import Quiz from "./Quiz";
 
 const ShowMeTellMe = () => {
     const iDropdowns = [
@@ -52,6 +53,10 @@ const ShowMeTellMe = () => {
             When it’s safe to do so, can you show me how you’d demist the front windscreen?<br /><br />
             When it’s safe to do so, can you show me how you’d open and close the side window?
         </p>
+
+        <div>
+            <Quiz/>
+        </div>
         </div>
         
 

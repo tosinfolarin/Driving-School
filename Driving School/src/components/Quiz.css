@@ -1,0 +1,59 @@
+.t-container{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+
+.t-container hr{
+    height: 2px;
+    border: none;
+    background: grey;
+}
+
+.t-container h2{
+    font-size: 27px;
+    font-weight: 500;
+
+}
+
+.t-container ul li{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.t-container button{
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+.t-container button:hover{
+    width: 270px;
+    background-color: red;
+    transition: 1s;
+}
+
+.correct{
+    background: rgb(74, 255, 74);
+}
+
+.incorrect{
+    background: rgb(247, 112, 112);
+} 
