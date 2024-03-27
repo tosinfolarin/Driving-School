@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import { data } from '../assets/data';
 import { useRef } from 'react';
+
+
+// using this tutorial I was able to create this quiz https://www.youtube.com/watch?v=VMZ7lcSdVnY
 const Quiz = () => {
     const [index, setIndex] = useState(0); 
     const [question, setQuestion] = useState(data[index]);

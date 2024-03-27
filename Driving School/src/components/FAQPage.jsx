@@ -1,12 +1,11 @@
+import Navbar from "./Navbar";
 import BookNow from "./BookNow";
 import Home from "./Home";
-import Navbar from "./Navbar";
-import Pricing from "./Pricing";
+import FAQs from "./FAQs";
 import Footer from "./Footer";
 
 
-
-const Homepage = () => {
+const FAQQs = () => {
     return (
       <div>
         <div className="App">
@@ -15,12 +14,11 @@ const Homepage = () => {
             <Home/>
           </div>
             <BookNow/>
-          
           </div>
-          <Pricing/>
+          <FAQs/>
           <Footer/>
         </div>
       );
 }
  
-export default Homepage;
+export default FAQQs;

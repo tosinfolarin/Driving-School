@@ -1,26 +1,23 @@
-import BookNow from "./BookNow";
-import Home from "./Home";
 import Navbar from "./Navbar";
-import Pricing from "./Pricing";
+import Home from "./Home";
+import BookNow from "./BookNow";
 import Footer from "./Footer";
+import InputWithButton from "./YelpSearch";
 
-
-
-const Homepage = () => {
+const MSchools = () => {
     return (
       <div>
         <div className="App">
           <Navbar/>
           <div className="header">
             <Home/>
-          </div>
             <BookNow/>
-          
           </div>
-          <Pricing/>
+            <InputWithButton/>
+          </div>
           <Footer/>
         </div>
       );
 }
- 
-export default Homepage;
+
+export default MSchools;

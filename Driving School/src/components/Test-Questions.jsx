@@ -1,26 +1,24 @@
-import BookNow from "./BookNow";
-import Home from "./Home";
 import Navbar from "./Navbar";
-import Pricing from "./Pricing";
+import Home from "./Home";
+import BookNow from "./BookNow";
+import ShowMeTellMe from "./SmeTme";
 import Footer from "./Footer";
 
 
-
-const Homepage = () => {
+const TestQuestions = () => {
     return (
       <div>
         <div className="App">
           <Navbar/>
           <div className="header">
             <Home/>
-          </div>
             <BookNow/>
-          
           </div>
-          <Pricing/>
-          <Footer/>
+            <ShowMeTellMe/>
+          </div>
+            <Footer/>
         </div>
       );
 }
  
-export default Homepage;
+export default TestQuestions;
