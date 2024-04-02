@@ -35,7 +35,7 @@ const ShowMeTellMe = () => {
 
 
     return (
-        
+        <div className ="show-questions">
         <div>
 
         <div className="flex-test">
@@ -85,6 +85,7 @@ const ShowMeTellMe = () => {
                     
                     </div>
                     
+                    </div>
                     </div>
                 );
 

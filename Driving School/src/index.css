@@ -121,12 +121,83 @@
 }
 
 
+/*Homepage styling */
+
+
+/* .all-testimonials {
+  display: grid;
+  text-align: center;
+  
+
+}
+.testimonials {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.student-img-container {
+  text-align: center;
+}
+
+.testimonial-text-container {
+  width: 75%; 
+}
+
+.testimonial-text {
+  text-align: center;
+} */
+
+
+.all-testimonials {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto; 
+  max-width: 1200px; 
+}
+
+.testimonials {
+  display: flex;
+  padding-top: 30px;
+  gap: 50px; /* Add some spacing between items */
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+.student-img-container {
+  text-align: center;
+}
+
+.testimonial-text-container {
+  width: 100%; /* Adjust width as needed */
+}
+
+.testimonial-text {
+  text-align: center;
+}
+
+
+
 
 /* FAQs Page Styling */
 
 .FAQs {
   color: black;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .dropbtn {
@@ -141,6 +212,7 @@
 
 .dropdown-item {
   list-style-type: none;
+  text-align: center;
 }
 
 .dropdown-content {
@@ -167,6 +239,7 @@
   max-width: 10px;
   margin-right: 10px;
 }
+
 
 /* PRICING STYLING */
 
@@ -199,8 +272,17 @@
 
 /* TEST QUESTIONS PAGE */
 
+.show-questions{
+   display: flex;
+   justify-content: center; /* horizontally center */
+   align-items: center; /* vertically center */
+   height: 180vh; /* full viewport height */
+}
+
+
 .flex-test {
   display: flex;
+  
 }
 
 .flex-one {
@@ -229,13 +311,11 @@
 .t-container{
   width: 500px;
   margin: auto;
-  /* margin-top: 10px; */
   margin-bottom: 20px;
   background: white;
   color: black;
   display: flex;
   flex-direction: column;
-  /* gap: 5px; */
   border-radius: 10px;
   padding: 40px 50px;
 }
@@ -249,7 +329,6 @@
 .t-container h2{
   font-size: 20px;
   font-weight: 500;
-
 }
 
 .t-container ul li{
@@ -273,6 +352,7 @@
   color: white;
   border-radius: 8px;
 }
+
 .t-container button:hover{
   width: 270px;
   background-color: red;
@@ -293,10 +373,85 @@
   text-align: center;
 }
 
+.subtitle {
+  background-color: rgb(224, 224, 224);
+  padding: 2rem ;
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.subtitle p {
+  font-size: 15px
+  
+}
+.s-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.f-container {
+  display: flex;
+  justify-content: center;
+}
+
+.f-container > * {
+  margin-right: .7rem;
+}
 
 
+.search-results {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 
+}
 
+.business-image{
+  margin-right: 1rem;
+}
+
+.business-info{
+  min-width: 400px;
+}
+
+.contact-info p {
+  font-size: .85rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating > * {
+  margin-right: 4px;
+}
+
+.rating p {
+  font-size: .85rem;
+}
+
+/*About Me*/
+
+.aboutme-page {
+  display: flex;
+}
+
+.pic-box {
+  flex: .6;
+  border: 2px solid rgb(255, 0, 0);
+}  
+
+.flex-c {
+  flex: 1.5;
+  border: 2px solid rgb(255, 0, 0);
+  margin-left: 20px;
+}
 
 /* FOOTER */
 
@@ -310,6 +465,7 @@
   padding: 10px; 
   left: 0;
   right: 0;
+  text-align: center;
 }
 
 .WhatsappLogo {

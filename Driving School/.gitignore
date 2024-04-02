@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 Yelp.jsx
+
+config.js

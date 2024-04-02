@@ -20,6 +20,7 @@ import Homepage from "./components/Homepage";
 import FAQPage from "./components/FAQPage";
 import TestQuestions from './components/Test-Questions';
 import MSchools from './components/MoreSchools';
+import AboutMePage from './components/AboutMePage';
  
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/FAQs" element={<FAQPage />} />
         <Route path="/test-questions" element={<TestQuestions/>} />
         <Route path="/more-schools" element={<MSchools/>} />
+        <Route path="/about-me" element={<AboutMePage/>} />
       </Routes>
     </Router>
   );

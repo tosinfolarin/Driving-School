@@ -28,6 +28,7 @@ const FAQs = () => {
     };
 
     return (
+        
         <div>
             <h1 className="FAQs">Frequently Asked Questions</h1>
             {dropdowns.map((dropdown, index) => (
@@ -47,7 +48,9 @@ const FAQs = () => {
                 </li>
             ))}
         </div>
+        
     );
+   
 }
 
 

@@ -1,0 +1,46 @@
+const SResults = () => {
+    return ( 
+        <div className ='s-container'>
+            <div className="subtitle">
+                <h1><strong>Driving Instructors</strong> In your area</h1>
+                <p> Showing 1-20 out of 543 results </p>
+            
+            </div>
+
+            <div className="s-filters">
+                <button className="button">
+                    <span className="icon"><i className="fas fa-sliders-h"></i></span>
+                    <span>All Filters</span>
+                </button>
+            <div/>
+
+            <div className = 'f-container'>
+
+                
+                <div className="buttons has-addons">
+                    <button className="button">£</button>
+                    <button className="button">££</button>
+                    <button className="button">£££</button>
+                    <button className="button">££££</button>
+                </div>
+
+                <button className="button-open">
+                    <span className="icon"><i className="fas fa-clock"></i></span>
+                    <span>Open Now</span>
+                </button>
+                <button className="button-cah">
+                    <span className="icon"><i className="fas fa-dollar-sign"></i></span>
+                    <span>Cashback</span>
+                </button>
+            </div>
+            </div>
+
+           
+                </div>
+        
+        
+     );
+     
+}
+ 
+export default SResults;
