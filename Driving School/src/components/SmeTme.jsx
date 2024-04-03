@@ -43,7 +43,7 @@ const ShowMeTellMe = () => {
         <div className="flex-one testVid">
         <iframe width="650" height="365" src="https://www.youtube.com/embed/uh8slnP76-w" title="&#39;Show me, tell me&#39;: tell me questions 2024: official DVSA guide" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         
-        <h1> 'Show Me' Questions </h1>
+        <h1 className="showme-header"> 'Show Me' Questions </h1>
         <p>
             When it’s safe to do so, can you show me how you wash and clean the rear windscreen? <br /><br />
             When it’s safe to do so, can you show me how you wash and clean the front windscreen?<br/> <br />
@@ -63,7 +63,7 @@ const ShowMeTellMe = () => {
         <div className="flex-child testText">
             
                 <div>
-                    <h1> 'Tell Me' Questions</h1>
+                    <h1 className="tellme-header"> 'Tell Me' Questions</h1>
                     {dropdowns.map((dropdown, index) => (
                         <li className="dropdown-item" key={index}>
                             <button className="dropbtn" onClick={() => toggleDropdown(index)}>

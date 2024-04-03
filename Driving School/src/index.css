@@ -124,37 +124,6 @@
 /*Homepage styling */
 
 
-/* .all-testimonials {
-  display: grid;
-  text-align: center;
-  
-
-}
-.testimonials {
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-}
-
-.testimonial-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-.student-img-container {
-  text-align: center;
-}
-
-.testimonial-text-container {
-  width: 75%; 
-}
-
-.testimonial-text {
-  text-align: center;
-} */
-
 
 .all-testimonials {
   display: grid;
@@ -167,7 +136,7 @@
 .testimonials {
   display: flex;
   padding-top: 30px;
-  gap: 50px; /* Add some spacing between items */
+  gap: 50px; /* Adds some spacing between items */
 }
 
 .testimonial-item {
@@ -182,7 +151,7 @@
 }
 
 .testimonial-text-container {
-  width: 100%; /* Adjust width as needed */
+  width: 100%;
 }
 
 .testimonial-text {
@@ -272,9 +241,14 @@
 
 /* TEST QUESTIONS PAGE */
 
+.showme-header{
+  text-align: center;
+}
+
 .show-questions{
    display: flex;
    justify-content: center; /* horizontally center */
+   text-align: center;
    align-items: center; /* vertically center */
    height: 180vh; /* full viewport height */
 }
@@ -307,6 +281,10 @@
   top: 10px;
 
 } 
+
+.tellme-header{
+  text-align: center;
+}
 
 .t-container{
   width: 500px;
