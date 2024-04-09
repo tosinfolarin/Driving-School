@@ -18,9 +18,9 @@ const Homepage = () => {
           </div>
             <BookNow/>
             <BusinessInfo/>
-            <Steps/>
+            
             <Tesimonials/>
-          
+          <Steps/>
           </div>
           <Pricing/>
           <Footer/>

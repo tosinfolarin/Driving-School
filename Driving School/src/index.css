@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
 
-/* body {
-  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-} */
+body {
+  background: #ecebeb;
+  /* z-index: 2; */
+} 
 
 /* body {
   background-image: url('src/images/Backgroundpic.jpeg');
@@ -24,9 +25,9 @@
   transform: rotate(-35deg);
   margin-right: 300px;
   position: relative;
-  top: 60px;
+  top:70px;
   left: 200px;
-
+  margin-bottom: -30px;
 }
 
 .BusinessName{
@@ -40,7 +41,9 @@
   align-items: center;
   /* max-width: 800px; */
   /* margin: 0 auto; */
-  border-bottom: 1px solid #f2f2f2;
+  /* border-bottom: 1px solid #f2f2f2; */
+  border-bottom: 1px solid #ff0000;
+  
 }
 .navbar h1 {
   color: #ff0000;
@@ -94,13 +97,11 @@
   text-align: center;
   font-weight: bold;
   
-
 }
 
 .book-now-text:hover{
   color:rgb(255, 0, 0);
 }
-
 
 
 .booking-container {
@@ -110,25 +111,27 @@
 
 .book-now-text {
   position: absolute;
-  top: 50%;
-  left: 55;
+  top: 53%;
   transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 24px;
-  padding: 10px;
+  /* padding: 10px; */
   z-index: 1; /* Sets a higher z-index for the text */
   text-decoration: none;
 }
 
 .car-image-container {
   position: relative;
+  top: -40px;
 }
+
 
 .car-book-image {
   width: 20%;
   height: auto;
   transform: rotate(-1deg);
-  z-index: 0; /* Sets a lower z-index for the image */
+  margin-bottom: -40px;
+  
 }
 
 
@@ -141,19 +144,18 @@
   justify-content: center;
 
 }
+
 .business-info {
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   max-width: 1200px;
+  
   
 }
 
-.all-testimonials {
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  margin: 0 auto; 
-  max-width: 1200px; 
+.all-testimonials{
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .testimonials {
@@ -173,6 +175,12 @@
   text-align: center;
 }
 
+.student-img {
+  border-radius: 150px;
+  width: 300px;
+  height: 300px;
+}
+
 .testimonial-text-container {
   width: 100%;
 }
@@ -180,6 +188,39 @@
 .testimonial-text {
   text-align: center;
 }
+
+.Steps-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding-top: 10px;
+}
+
+
+.Steps-container h1 {
+  text-align: center; /* Center text horizontally */
+  font-size: 18px;
+}
+
+.road-image {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 70px;
+  max-height: 90px; /* Set maximum width */
+  opacity: 0.3; /* Adjust opacity as needed */
+ 
+}
+
+
+.all-testimonials {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto; 
+  max-width: 1200px; 
+}
+
 
 
 
