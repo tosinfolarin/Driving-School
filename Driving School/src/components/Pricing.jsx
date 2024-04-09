@@ -1,7 +1,7 @@
 const Pricing = () => {
     return (
 
-    <div>
+    <div className = "Price-container">
         <div className="Pricing">
            <h1> PRICE LIST </h1> 
            <h4> Hourly Rate: £35 per hour</h4>

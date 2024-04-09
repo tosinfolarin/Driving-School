@@ -153,9 +153,14 @@ body {
   
 }
 
-.all-testimonials{
+.all-testimonials {
   padding-bottom: 50px;
   padding-top: 50px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto; 
+  max-width: 1200px; 
 }
 
 .testimonials {
@@ -179,6 +184,8 @@ body {
   border-radius: 150px;
   width: 300px;
   height: 300px;
+  border: 1px solid transparent; /* Transparent border */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-text-container {
@@ -189,38 +196,79 @@ body {
   text-align: center;
 }
 
+
 .Steps-container {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    align-items: center; /* Centers items horizontally */
     max-width: 1200px;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto; /* Centers the container horizontally */
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 
 .Steps-container h1 {
-  text-align: center; /* Center text horizontally */
+  text-align: center; /* Centers text horizontally */
   font-size: 18px;
 }
 
 .road-image {
-  width: 100%; /* Adjust the width as needed */
+  width: 100%; 
   max-width: 70px;
-  max-height: 90px; /* Set maximum width */
-  opacity: 0.3; /* Adjust opacity as needed */
+  max-height: 90px; 
+  opacity: 0.3; 
  
 }
 
 
-.all-testimonials {
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  margin: 0 auto; 
-  max-width: 1200px; 
+/* PRICING STYLING */
+
+.Price-container {
+  border: 4px solid #ff0000; 
+  border-radius: 10px; 
+  padding: 20px; 
+  max-width: 800px;
+  padding-bottom: 50px;
+
+
+  margin: 0 auto;
 }
 
+.Pricing {
+  text-align: center;
+  padding-top: 10px;
+  
+}
+
+.outer-pcontainer {
+  display: flex;
+  justify-content: center; 
+  
+}
+
+.flex-pcontainer {
+  display: flex;
+  max-width: 1200px;
+  
+}
+
+.flex-pchild {
+  flex: 1;
+  /* background-color: rgb(255, 0, 0, 0.5); */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px
+  
+}  
+
+.flex-pchild:first-child {
+  margin-right: 20px;
+} 
+
+.p-heading{
+  font-weight: bold;
+  font-size: 25px;
+}
 
 
 
@@ -271,41 +319,6 @@ body {
 .downarrow img {
   max-width: 10px;
   margin-right: 10px;
-}
-
-
-/* PRICING STYLING */
-
-.Pricing {
-  text-align: left;
-}
-
-.outer-pcontainer {
-  display: flex;
-  justify-content: center; 
-}
-
-.flex-pcontainer {
-  display: flex;
-  max-width: 1200px;
-  
-}
-
-.flex-pchild {
-  flex: 1;
-  /* background-color: rgb(255, 0, 0, 0.5); */
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 20px
-  
-}  
-
-.flex-pchild:first-child {
-  margin-right: 20px;
-} 
-
-.p-heading{
-  font-weight: bold;
-  font-size: 25px;
 }
 
 
