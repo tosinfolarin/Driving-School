@@ -8,6 +8,7 @@ const BookNow = () => {
             </div>
         </div>
     );
+    // <Link to= "/create">Book Now</Link>
 }
 
 export default BookNow;

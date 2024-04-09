@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
 
+/* body {
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+} */
+
+/* body {
+  background-image: url('src/images/Backgroundpic.jpeg');
+  background-size: 95%;
+  background-position: center;
+} */
 
 /* base styles */
 * {
@@ -80,9 +89,11 @@
 
 .slogan{
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
   text-shadow: #000000;
   text-align: center;
+  font-weight: bold;
+  
 
 }
 
@@ -123,7 +134,19 @@
 
 /*Homepage styling */
 
+.business-info-holder {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 
+}
+.business-info {
+  margin: 0;
+  font-size: 15px;
+  max-width: 1200px;
+  
+}
 
 .all-testimonials {
   display: grid;
@@ -216,8 +239,14 @@
   text-align: left;
 }
 
+.outer-pcontainer {
+  display: flex;
+  justify-content: center; 
+}
+
 .flex-pcontainer {
   display: flex;
+  max-width: 1200px;
   
 }
 

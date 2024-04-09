@@ -9,7 +9,7 @@ const Pricing = () => {
 
         
 
-        
+        <div className="outer-pcontainer">
         <div className="flex-pcontainer">
 
             <div className="flex-pchild box1">
@@ -34,6 +34,7 @@ const Pricing = () => {
                 20 Lessons - £630
             </div>
         
+        </div>
         </div>
     </div>
     );

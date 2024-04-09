@@ -4,7 +4,8 @@ import Navbar from "./Navbar";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
 import Tesimonials from "./Testomonials";
-
+import BusinessInfo from "./BusinessInfo";
+import Steps from "./Steps";
 
 
 const Homepage = () => {
@@ -16,6 +17,8 @@ const Homepage = () => {
             <Home/>
           </div>
             <BookNow/>
+            <BusinessInfo/>
+            <Steps/>
             <Tesimonials/>
           
           </div>
