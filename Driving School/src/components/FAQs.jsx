@@ -1,6 +1,4 @@
-// import Navbar from "./Navbar";
-// import Home from "./Home";
-// import BookNow from "./BookNow";
+
 import {useState} from "react";
 
 const FAQs = () => {
@@ -29,9 +27,10 @@ const FAQs = () => {
 
     return (
         
-        <div>
+        <div className ="dropdown-container">
             <h1 className="FAQs">Frequently Asked Questions</h1>
             {dropdowns.map((dropdown, index) => (
+                
                 <li className="dropdown-item" key={index}>
                     <button className="dropbtn" onClick={() => toggleDropdown(index)}>
                         <h3>{dropdown.question}</h3>
@@ -46,6 +45,7 @@ const FAQs = () => {
                         </p>
                     </div>
                 </li>
+                
             ))}
         </div>
         

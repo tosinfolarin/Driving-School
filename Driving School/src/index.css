@@ -129,7 +129,6 @@ body {
 .car-book-image {
   width: 20%;
   height: auto;
-  transform: rotate(-1deg);
   margin-bottom: -40px;
   
 }
@@ -181,7 +180,7 @@ body {
 }
 
 .student-img {
-  border-radius: 150px;
+  border-radius: 10px;
   width: 300px;
   height: 300px;
   border: 1px solid transparent; /* Transparent border */
@@ -199,7 +198,7 @@ body {
 
 .Steps-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; /* Stacks items vertically */
     align-items: center; /* Centers items horizontally */
     max-width: 1200px;
     margin: 0 auto; /* Centers the container horizontally */
@@ -296,18 +295,31 @@ body {
   text-align: center;
 }
 
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .dropdown-content {
   max-height: 0;
   overflow: hidden;
   border-radius: 3px;
   background-color: #ffffffea;
   padding: 2px;
+  max-width: 600px;
+  text-align: center;
   transition: max-height 1s ease;
 }
 
-
 .dropdown-content.show {
   max-height: 100px;
+  max-width: 600px;
+  text-align: center;
+  justify-content: center;
+  
 }
 
 .downarrow {
@@ -504,12 +516,12 @@ body {
 }
 
 .pic-box {
-  flex: .6;
+  flex: .5;
   border: 2px solid rgb(255, 0, 0);
 }  
 
 .flex-c {
-  flex: 1.5;
+  flex: 1;
   border: 2px solid rgb(255, 0, 0);
   margin-left: 20px;
 }

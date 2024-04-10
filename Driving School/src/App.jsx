@@ -1,14 +1,4 @@
 import './App.css';
-// import Navbar from './components/Navbar';
-// import Home from './components/Home';
-// import BookNow from './components/BookNow';
-// import FAQs from './components/FAQs';
-// import Pricing from './components/Pricing';
-
-
-// import Homepage from './components/Homepage';
-// import Footer from './components/Footer';
-
 // import ShowMeTellMe from './components/SmeTme';
 // import YelpLanding from './components/YelpLanding';
 // import { Button } from './components/ui/SearchButton';
@@ -21,6 +11,7 @@ import FAQPage from "./components/FAQPage";
 import TestQuestions from './components/Test-Questions';
 import MSchools from './components/MoreSchools';
 import AboutMePage from './components/AboutMePage';
+import BookingPage from './components/BookingPage';
  
 function App() {
   return (
@@ -31,6 +22,7 @@ function App() {
         <Route path="/test-questions" element={<TestQuestions/>} />
         <Route path="/more-schools" element={<MSchools/>} />
         <Route path="/about-me" element={<AboutMePage/>} />
+        <Route path="/book-now" element={<BookingPage/>} />
       </Routes>
     </Router>
   );
