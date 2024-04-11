@@ -23,3 +23,6 @@ https://www.gov.uk/government/publications/car-show-me-tell-me-vehicle-safety-qu
 libraries:
 schadcn
 npm install react-aria-components
+
+bulma css library
+font-awesome icons

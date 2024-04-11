@@ -550,12 +550,61 @@ body {
   background: rgb(255, 146, 146);
 } 
 
+
+
+/*About Me*/
+
+.aboutme-page {
+  display: flex;
+}
+
+.pic-box {
+  flex: .5;
+  border: 2px solid rgb(255, 0, 0);
+}  
+
+.instructor-image{
+  height: 400px;
+  width: 600px;
+}
+
+.flex-c {
+  flex: 1;
+  border: 2px solid rgb(255, 0, 0);
+  margin-left: 20px;
+}
+
+
+
+
 /* Search new instructors page*/
 
 .inputwithbutton{
   text-align: center;
 }
 
+.inputwithbutton Input {
+  width: 200px; 
+  height: 20px; 
+  padding: 10px; 
+  font-size: 18px; 
+  margin-right: 10px; 
+}
+
+.inputwithbutton Button {
+  width: 40px; 
+  height: 40px;
+  font-size: 20px; /* Adjust the font size as needed */
+  border-radius: 8px;
+  color: white;
+  background-color: red;
+}
+
+.inputwithbutton Button:hover {
+  color: #ff0000;
+  background-color: black;
+  transition: 1s ease;
+}
 .subtitle {
   background-color: rgb(224, 224, 224);
   padding: 2rem ;
@@ -594,12 +643,21 @@ body {
 
 }
 
+.tag{
+  background-color: grey;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
 .business-image{
   margin-right: 1rem;
+  max-width: 210px;
+  max-height: 210px;
 }
 
 .business-info{
   min-width: 400px;
+  
 }
 
 .contact-info p {
@@ -619,27 +677,6 @@ body {
   font-size: .85rem;
 }
 
-/*About Me*/
-
-.aboutme-page {
-  display: flex;
-}
-
-.pic-box {
-  flex: .5;
-  border: 2px solid rgb(255, 0, 0);
-}  
-
-.instructor-image{
-  height: 400px;
-  width: 600px;
-}
-
-.flex-c {
-  flex: 1;
-  border: 2px solid rgb(255, 0, 0);
-  margin-left: 20px;
-}
 
 
 /* BOOKING PAGE */

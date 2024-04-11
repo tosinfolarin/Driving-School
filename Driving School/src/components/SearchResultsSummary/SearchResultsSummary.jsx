@@ -7,13 +7,13 @@ const SResults = () => {
             
             </div>
 
+            
             <div className="s-filters">
                 <button className="button">
                     <span className="icon"><i className="fas fa-sliders-h"></i></span>
                     <span>All Filters</span>
                 </button>
             <div/>
-
             <div className = 'f-container'>
 
                 

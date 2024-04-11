@@ -2,9 +2,10 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import BookNow from "./BookNow";
 import Footer from "./Footer";
-import InputWithButton from "./YelpSearch";
-import SResults from "./SResultBar";
-import SearchResults from "./SearchResults/SResultss";
+import InputWithButton from "./YelpSearchBar";
+import SResults from "./SearchResultsSummary/SearchResultsSummary";
+import SearchResult from "./SearchResultsSummary/SearchResult";
+
 
 const MSchools = () => {
     return (
@@ -16,13 +17,18 @@ const MSchools = () => {
             <BookNow/>
           </div>
             <InputWithButton/>
-          <SResults/>
-          <SearchResults/>
-          <SearchResults/>
+            <SResults/>
+            <SearchResult/>
+            <SearchResult/>
+          
+          
           </div>
           <Footer/>
-          
+         
         </div>
+       
+        
+      
       );
 }
 
