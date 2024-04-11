@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Home from "./Home";
 import Pricing from "./Pricing";
+import BookingForm from "./BookingForm";
 
 
 
@@ -12,11 +13,9 @@ const BookingPage = () => {
         <Navbar/>
         <Home/>
         <Pricing/>
-      
-         <h1>
-        Booking Page 
-         </h1> 
+        <BookingForm/>
         <Footer/> 
+       
     
     </div>
     );

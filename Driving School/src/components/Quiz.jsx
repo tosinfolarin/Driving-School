@@ -35,6 +35,7 @@ const Quiz = () => {
  
         }
     }
+    
 // This allows us to move to the next question
     const next = () => {
         if (lock===true){
