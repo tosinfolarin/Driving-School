@@ -2,7 +2,7 @@
 
 body {
   background: #ecebeb;
-  /* z-index: 2; */
+  
 } 
 
 /* body {
@@ -120,6 +120,41 @@ body {
   text-decoration: none;
 }
 
+
+
+
+
+
+/* bigger screens */
+@media screen and (min-width: 1200px) {
+  .book-now-text {
+    font-size: 27px;
+  }
+}
+
+/* medium screens */
+@media screen and (max-width: 768px) {
+  .book-now-text {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+/* smaller screens */
+@media screen and (max-width: 480px) {
+  .book-now-text {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 .car-image-container {
   position: relative;
   top: -40px;
@@ -132,6 +167,22 @@ body {
   margin-bottom: -40px;
   
 }
+
+
+
+
+/* smaller screens */
+@media screen and (max-width: 480px) {
+  .car-book-image {
+    width: 40%; /* Decrease image size for smaller screens */
+    
+  }
+}
+
+
+
+
+
 
 
 /*Homepage styling */
@@ -151,6 +202,38 @@ body {
   
   
 }
+
+
+
+
+/* bigger screens */
+@media screen and (max-width: 1200px) {
+  .business-info {
+    max-width: 90%; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .business-info {
+    font-size: 16px; 
+  }
+}
+
+/* iPhone Screens */
+@media screen and (max-width: 414px) {
+  .business-info {
+    font-size: 14px; 
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .all-testimonials {
   padding-bottom: 50px;
@@ -194,6 +277,32 @@ body {
 .testimonial-text {
   text-align: center;
 }
+
+
+
+
+
+
+/* Bigger screens */
+@media screen and (max-width: 1200px) {
+  .testimonial-item {
+    width: 90%; /* Adjusted width for medium-sized screens */
+  }
+}
+
+/* Smaller Screens */
+@media screen and (max-width: 768px) {
+  .testimonials {
+    flex-direction: column; /* Display images in a column on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .testimonial-item {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+}
+
+
 
 
 .Steps-container {
