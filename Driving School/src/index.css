@@ -638,8 +638,10 @@ body {
 
 .search-results {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 1rem;
+  
 
 }
 
@@ -657,7 +659,6 @@ body {
 
 .business-info{
   min-width: 400px;
-  
 }
 
 .contact-info p {
@@ -678,6 +679,11 @@ body {
 }
 
 
+.input-control {
+  min-width: 320px;
+}
+
+
 
 /* BOOKING PAGE */
 
@@ -694,6 +700,10 @@ body {
   padding: 20px;
   margin-top: 20px;
 }
+
+
+
+
 
 /* FOOTER */
 

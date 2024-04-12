@@ -23,7 +23,7 @@ const BookingForm = () => {
         onReset={() => setInvalid(false)}>
         {isInvalid &&
           <div role="alert" tabIndex={-1} ref={e => e?.focus()}>
-            <h3>Unable to submit</h3>
+            <h3>*ERROR* Unable to submit*</h3>
             <p>Please ensure all boxes are filled correctly and re-submit the form.</p>
           </div>
         }
