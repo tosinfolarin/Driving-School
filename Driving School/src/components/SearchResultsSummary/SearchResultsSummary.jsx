@@ -1,4 +1,4 @@
-const SResults = () => {
+const SubNav = () => {
     return ( 
         <div className ='s-container'>
             <div className="subtitle">
@@ -7,16 +7,16 @@ const SResults = () => {
             
             </div>
 
+            <div className = 'f-container'>
             
-            <div className="s-filters">
-                <button className="button">
+            
+                <button className="s-filters">
                     <span className="icon"><i className="fas fa-sliders-h"></i></span>
                     <span>All Filters</span>
                 </button>
-            <div/>
-            <div className = 'f-container'>
+            
 
-                
+            
                 <div className="buttons has-addons">
                     <button className="button">£</button>
                     <button className="button">££</button>
@@ -34,13 +34,14 @@ const SResults = () => {
                 </button>
             </div>
             </div>
+        
 
            
-                </div>
+        
         
         
      );
      
 }
  
-export default SResults;
+export default SubNav;

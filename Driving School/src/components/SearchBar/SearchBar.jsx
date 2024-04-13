@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const SearchBar = (props) => {
 
-    const [term, setTerm] = useState(props.term || '');
+    const [term, setTerm] = useState(props.term || ''); 
     const [location, setLocation] = useState (props.location || '');
 
     function submit (e) {
@@ -23,7 +23,7 @@ const SearchBar = (props) => {
                 <p className="control">
                 <input className="control" 
                 type="text" 
-                onChange={(e) => setTerm(e.target.value)}
+                onChange={(e) => setTerm(e.target.value)} //this function is called everytime something changes in the text 
                 placeholder="Drivers"/>
                     
                 </p>

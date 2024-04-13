@@ -12,6 +12,8 @@ import TestQuestions from './components/Test-Questions';
 import MSchools from './components/MoreSchools';
 import AboutMePage from './components/AboutMePage';
 import BookingPage from './components/BookingPage';
+
+import Search from './components/Search/Search';
  
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
         <Route path="/more-schools" element={<MSchools/>} />
         <Route path="/about-me" element={<AboutMePage/>} />
         <Route path="/book-now" element={<BookingPage/>} />
+
+
+
+
+
+        <Route path="/search" element={<Search/>}/>
       </Routes>
     </Router>
   );
