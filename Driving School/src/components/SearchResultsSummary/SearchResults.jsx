@@ -22,7 +22,7 @@ const SearchResults = (props) => {
 export default SearchResults;
 
 
-// import BusinessRating from './BusinessRating'; // Assuming this component is imported from the correct location
+// import BusinessRating from "../../Business Rating/BusinessRating"; // Assuming this component is imported from the correct location
 
 // const SearchResult = (props) => {
 //     const b = props.business;

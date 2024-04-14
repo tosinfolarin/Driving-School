@@ -3,34 +3,16 @@
 import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 
-const BusinessRating = () => {
+const BusinessRating = (props) => {
     return (
       <div className="rating">
         <Rating
-        value = {2.5}
+        
+        value = {props.rating}
         readOnly/>
-        <p>725 reviews</p>
+        <p>{props.reviewCount} Review(s)</p>
       </div>
     );
   };
 
   export default BusinessRating;
-
-
-
-
-// import { Rating } from '@smastrom/react-rating'
-// import '@smastrom/react-rating/style.css'
-
-// const BusinessRating = (props) => {
-//     return (
-//       <div className="rating">
-//         <Rating
-//         value = {props.rating}
-//         readOnly/>
-//         <p>{props.reviewCount}</p>
-//       </div>
-//     );
-//   };
-
-//   export default BusinessRating;

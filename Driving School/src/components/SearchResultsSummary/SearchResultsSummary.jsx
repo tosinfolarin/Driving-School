@@ -1,10 +1,14 @@
-const SubNav = () => {
+const SubNav = (props) => {
+    let resultStats = null;
+    if (props.amountResults && props.showResults) {
+        resultStats = <p> Showing 1-{props.showResults} out of {props.amountResults} </p>
+    }
+
     return ( 
         <div className ='s-container'>
             <div className="subtitle">
                 <h1><strong>Driving Instructors</strong> In your area</h1>
-                <p> Showing 1-20 out of 543 results </p>
-            
+                {resultStats}
             </div>
 
             <div className = 'f-container'>

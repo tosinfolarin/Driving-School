@@ -22,8 +22,11 @@ const Search = () => {
             </div>
             <div>
                <SearchBar />
-               <SubNav/>
-               <SearchResults businesses={businesses}/>
+               <SubNav term={term} 
+               location={locationParam} 
+               amountResults={amountResults}
+               showResults={businesses ? businesses.length : 0}/>
+               <SearchResults businesses={businesses} className="search-rendered"/>
                
             </div>
             </div>
