@@ -26,3 +26,9 @@ npm install react-aria-components
 
 bulma css library
 font-awesome icons
+
+for star:
+https://github.com/smastrom/react-rating
+
+
+'react/prop-types'; [disabled] added to .eslintrc.cjs

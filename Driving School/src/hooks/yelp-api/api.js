@@ -7,8 +7,8 @@ export function get(path, queryParams) {
         headers: {
             Authorization: `Bearer ${BEARER_TOKEN}` ,
             Origin: 'localhost',
-            
-        },
             withCredentials: true,
+        },
+            
     });
 }

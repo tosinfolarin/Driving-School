@@ -638,6 +638,7 @@ body {
 
 .search-results {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
@@ -668,6 +669,7 @@ body {
 .rating {
   display: flex;
   align-items: center;
+  max-width: 200px;
 }
 
 .rating > * {

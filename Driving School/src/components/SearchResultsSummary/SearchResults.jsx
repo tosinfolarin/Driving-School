@@ -2,18 +2,19 @@ import SearchResult from "./SearchResult";
 
 
 const SearchResults = (props) => {
+    console.log(props,'SEARCH RESULTS');
+    
+
     if (!props.businesses || !props.businesses.length) {
-        return (<div></div>);
+        return (<div>No Search Results Found</div>);
     }
 
-    const searchResults = props.businesses.map(b => <SearchResult key={b.id} business ={b}/>)
+    const searchResults = props.businesses.map(b => <SearchResult key={b.id} business={b}/>)
     
     
     return ( 
         <div className = "search-results">
             {searchResults}
-            {/* <SearchResult/>
-            <SearchResult/> */}
         </div>
      );
 }
@@ -34,14 +35,14 @@ export default SearchResults;
 //     const addressLines = b.location.display_address.map(addressLine => <p key={b.id + addressLine}>{addressLine}</p>);
 
 //     return (
-//         <div className={styles['search-result']}>
-//             <img src={b.image_url} alt='business' className={styles['business-image']} />
-//             <div className={styles['business-info']}>
+//         <div className='search-result'>
+//             <img src={b.image_url} alt='business' className='business-image'/>
+//             <div className='business-info'>
 //                 <h2 className="subtitle">{b.name}</h2>
 //                 <BusinessRating reviewCount={b.review_count} rating={b.rating} />
 //                 <p>{b.price} {tags}</p>
 //             </div>
-//             <div className={styles['contact-info']}>
+//             <div className='contact-info'>
 //                 <p>{b.phone}</p>
 //                 {addressLines}
 //             </div>

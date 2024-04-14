@@ -1,20 +1,36 @@
-import Rating from "react-rating";
+// import Rating from "react-rating";
+
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 
 const BusinessRating = () => {
     return (
       <div className="rating">
         <Rating
-      emptySymbol="far fa-star"
-      fullSymbol="fas fa-star"
-      fractions={2}
-      readonly
-      initialRating={3}/>
-
-
+        value = {2.5}
+        readOnly/>
         <p>725 reviews</p>
       </div>
     );
   };
-  
+
   export default BusinessRating;
-  
+
+
+
+
+// import { Rating } from '@smastrom/react-rating'
+// import '@smastrom/react-rating/style.css'
+
+// const BusinessRating = (props) => {
+//     return (
+//       <div className="rating">
+//         <Rating
+//         value = {props.rating}
+//         readOnly/>
+//         <p>{props.reviewCount}</p>
+//       </div>
+//     );
+//   };
+
+//   export default BusinessRating;

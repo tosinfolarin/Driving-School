@@ -1,7 +1,7 @@
 import Navbar from "../Navbar"; 
 import SearchBar from "../SearchBar/SearchBar";
 import Footer from "../Footer";
-import SearchResult from "../SearchResultsSummary/SearchResult";
+import SearchResults from "../SearchResultsSummary/SearchResults";
 import SubNav from "../SearchResultsSummary/SearchResultsSummary";
 import { useBusinessSearch } from "../../hooks/yelp-api/useBusinessSearch";
 
@@ -23,7 +23,7 @@ const Search = () => {
             <div>
                <SearchBar />
                <SubNav/>
-               <SearchResult businesses = {businesses}/>
+               <SearchResults businesses={businesses}/>
                
             </div>
             </div>
