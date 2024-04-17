@@ -64,6 +64,8 @@ const BookingForm = () => {
           <FieldError />
         </TextField>
 
+        <br/>
+        <br/>
         <h3> Lesson Details </h3>
 
         <TextField name="firstName" isRequired>
@@ -73,7 +75,7 @@ const BookingForm = () => {
         </TextField>
 
         <TextField name="firstName" isRequired>
-          <Label>What is the Best time to contact you?:* </Label>
+          <Label>What is the best time to contact you?:* </Label>
           <Input />
           <FieldError />
         </TextField>
@@ -93,7 +95,11 @@ const BookingForm = () => {
 
 
 
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
         <div style={{display: 'flex', gap: 8}}>
           <Button type="submit">Submit</Button>
           <Button type="reset">Reset</Button>

@@ -7,7 +7,7 @@ const SubNav = (props) => {
     return ( 
         <div className ='s-container'>
             <div className="subtitle">
-                <h1><strong>Driving Instructors</strong> In your area</h1>
+            <h1>{props.term} <span style={{ fontStyle: 'italic', fontWeight: 'bold' }}>{props.location}</span></h1>
                 {resultStats}
             </div>
 

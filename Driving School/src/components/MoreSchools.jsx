@@ -9,7 +9,7 @@ import SearchBar from "./SearchBar/SearchBar";
 import SearchResults from "./SearchResultsSummary/SearchResults";
 
 
-const MSchools = () => {
+const MSchools = (props) => {
   
   function search(term, location) {
     const urlEncodedTerm = encodeURI(term);
@@ -26,7 +26,7 @@ const MSchools = () => {
           <BookNow/>
         </div>
         {/* <InputWithButton/> */}
-        <SearchBar search={search}/>
+        <SearchBar term={props.term} location={props.location} search={search}/>
         <SubNav/>
         {/* <SearchResult/> */}
         <SearchResults/>

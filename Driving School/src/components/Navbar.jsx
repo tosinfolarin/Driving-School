@@ -3,13 +3,16 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     return (  
         <nav className="navbar">
-            <div className="car-image-container">
+           
+                <div className="car-image-container">
+             <Link to="/">
                 <img src='/src/images/Lplate.png' alt="Learner Symbol" className="LPlate" />
+           
                 <div className= "BusinessName">
                     <h1>Trinity</h1>
-                    <h3>Driving School</h3>
+                    <h1 className="driving-school">Driving School</h1>
                 </div>
-                
+                 </Link>
             </div>
             
             
@@ -21,7 +24,7 @@ const Navbar = () => {
                 <Link to= "/FAQs">FAQs</Link>
                 <Link to= "/more-schools">More Schools</Link>
                 
-                <Link to= "/search">Search</Link>
+                {/* <Link to= "/search">Search</Link> */}
                 
                 <Link to= "/book-now">Book Now</Link>
 

@@ -14,6 +14,17 @@ const Search = () => {
   const locationParam = params.get('find_loc');
   const [businesses, amountResults, searchParams, setSearchParams] = useBusinessSearch(term, locationParam);
 
+  if (!term || !locationParam)
+    {window.location.href = '/more-schools'};
+
+
+  function search(term, location) {
+    console.log('I am called');
+    searchParams({term, location });
+  }
+
+
+
     return (
         <div>
           <div>
@@ -21,7 +32,7 @@ const Search = () => {
                 <Navbar />
             </div>
             <div>
-               <SearchBar />
+               <SearchBar term={term} location={locationParam} search={search}/>
                <SubNav term={term} 
                location={locationParam} 
                amountResults={amountResults}

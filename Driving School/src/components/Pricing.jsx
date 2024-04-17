@@ -20,18 +20,18 @@ const Pricing = () => {
                 <br/>
                 FOUR: 45 minute lessons <br/>
                 An introductory course to get you started<br/>
-                (This works out to be 3 Double lessons)
+                (This works out to be 2 Double lessons)
             </div>
         
     
             <div className="flex-pchild box2">
                 <div className="p-heading">OFFERS: BLOCK BOOKINGS</div>
                 <br/><br/>
-                6 Lessons - £195
+                6 Lessons (3 x 2 hour Lessons) - £195
                 <br/>
-                12 Lessons - £384
+                12 Lessons (6 x 2 hour Lessons) - £384
                 <br/>
-                20 Lessons - £630
+                20 Lessons (10 x 2 hour Lessons) - £630
             </div>
         
         </div>

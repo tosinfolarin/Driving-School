@@ -16,7 +16,11 @@ const AboutMe = () => {
       I understand that as a learner, it is very rare for you to have perfect knowledge of driving. With Trinity, no question is a silly question
       and I would like for students to see this as a safe learning environment.
       <br></br>
-      I look forward to you joining Trinity on your journey to becoming an excellent driver.
+      I am open to helping anyone who wants to learn. There is no discrimination with Trinity. Whether you are coming back from a driving ban or whether you need to 
+      renew your licence after the age of 70 and want to get further practice.
+      <br></br>
+      <br></br>
+      <br></br>I look forward to you joining Trinity on your journey to becoming an excellent driver.
     </div>
     
   </div> 

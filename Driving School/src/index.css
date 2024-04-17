@@ -25,22 +25,22 @@ body {
   transform: rotate(-35deg);
   margin-right: 300px;
   position: relative;
-  top:70px;
+  top:100px;
   left: 200px;
-  margin-bottom: -30px;
+  margin-bottom: -40px;
 }
 
 .BusinessName{
   position: relative;
-  bottom: 50px;
+  bottom: -30px;
   left: 400px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  /* max-width: 800px; */
-  /* margin: 0 auto; */
+  max-width: 1200px;
+  margin: 0 auto;
   /* border-bottom: 1px solid #f2f2f2; */
   border-bottom: 1px solid #ff0000;
   
@@ -187,52 +187,16 @@ body {
 
 /*Homepage styling */
 
-.business-info-holder {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-
+.trinity-info-holder {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center; /* Center-align the content */
 }
 
-.business-info {
+.trinity-info {
   margin: 0;
   font-size: 20px;
-  max-width: 1200px;
-  
-  
 }
-
-
-
-
-/* bigger screens */
-@media screen and (max-width: 1200px) {
-  .business-info {
-    max-width: 90%; 
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .business-info {
-    font-size: 16px; 
-  }
-}
-
-/* iPhone Screens */
-@media screen and (max-width: 414px) {
-  .business-info {
-    font-size: 14px; 
-  }
-}
-
-
-
-
-
-
-
-
 
 
 .all-testimonials {
@@ -303,8 +267,6 @@ body {
 }
 
 
-
-
 .Steps-container {
     display: flex;
     flex-direction: column; /* Stacks items vertically */
@@ -317,9 +279,14 @@ body {
 
 
 .Steps-container h1 {
-  text-align: center; /* Centers text horizontally */
+  text-align: center; 
   font-size: 18px;
+  border: 2px solid rgb(142, 1, 1);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
 }
+
 
 .road-image {
   width: 100%; 
@@ -635,19 +602,46 @@ body {
   margin-right: .7rem;
 }
 
+
 .search-results {
   display: flex;
-flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  max-width: 900px;
+  width: 100%;
   justify-content: center;
-  margin-top: 1rem;
-  
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.search-result {
+  padding: 10px; 
+}
+
+.business-info{
+  min-width: 200px; 
+}
+
+.business-name {
+  font-weight: bold;
+}
+
+.contact-info p {
+  font-size: .85rem;
+}
+
+.yelp-logo {
+  height: 40px;
+  width: 45px;
 }
 
 .tag{
-  background-color: grey;
+  background-color: rgb(201, 201, 201);
   border-radius: 4px;
   font-size: 13px;
+  padding: 1px;
+  margin: 0 1px;
 }
 
 .business-image{
@@ -656,13 +650,7 @@ flex-direction: column;
   max-height: 210px;
 }
 
-.business-info{
-  min-width: 400px;
-}
 
-.contact-info p {
-  font-size: .85rem;
-}
 
 .rating {
   display: flex;

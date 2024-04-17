@@ -21,15 +21,20 @@ const SearchResult = (props) => {
         
 
             <div className ="business-info">
-                <h2 className ="business-name"> {b.name} </h2>
+            
+                <h3 className ="business-name"> {b.name} </h3>
                 <BusinessRating reviewCount={b.review_count} rating ={b.rating} />
+                <a href="https://www.yelp.co.uk/" target="_blank" rel="noopener noreferrer">
+                    <img src='src/images/yelp-logo.png' alt='yelp-logo' className="yelp-logo" />
+                </a>
                 <p>{tags}</p>
             </div>
 
 
             <div className = "contact-info">
                 <p>{b.phone}</p>
-                <p>{addressLines}</p>
+                {addressLines}
+                
             </div>
             <div>
               
