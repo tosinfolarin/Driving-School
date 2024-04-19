@@ -12,7 +12,7 @@ function SearchBar(props) {
     setTerm('Driving Schools'); // this will automatically set the term when the component mounts
 }, []);
 
-    function submit (e) {
+    function submit(e) {
         if (typeof props.search === 'function'){
             props.search(term, location);
         }
@@ -31,14 +31,15 @@ function SearchBar(props) {
       <div>
       <Input type="text" 
       value="Driving Schools"
-      onChange={(e) => setTerm(e.target.value)}
+      // onChange={(e) => setTerm(e.target.value)}
       placeholder="Driving Schools"
       readOnly />
       
 
 
 
-      <Input type="text" 
+      <Input type="text"
+      value={location} // When the user makes a search, their search input is shown when the information is rendered
       onChange={(e) => setLocation(e.target.value)}
       placeholder="Where" />
       

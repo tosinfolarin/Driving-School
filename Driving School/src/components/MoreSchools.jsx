@@ -2,9 +2,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import BookNow from "./BookNow";
 import Footer from "./Footer";
-// import InputWithButton from "./SearchBar/YelpSearchBar";
 import SubNav from "./SearchResultsSummary/SearchResultsSummary";
-// import SearchResult from "./SearchResultsSummary/SearchResult";
 import SearchBar from "./SearchBar/SearchBar";
 import SearchResults from "./SearchResultsSummary/SearchResults";
 
@@ -25,8 +23,7 @@ const MSchools = (props) => {
           <Home/>
           <BookNow/>
         </div>
-        {/* <InputWithButton/> */}
-        <SearchBar term={props.term} location={props.location} search={search}/>
+        <SearchBar term={props.term} location={props.location}  search={search}/>
         <SubNav/>
         {/* <SearchResult/> */}
         <SearchResults/>

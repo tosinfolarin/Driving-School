@@ -65,15 +65,15 @@ const ShowMeTellMe = () => {
                 <div>
                     <h1 className="tellme-header"> 'Tell Me' Questions</h1>
                     {dropdowns.map((dropdown, index) => (
-                        <li className="dropdown-item" key={index}>
-                            <button className="dropbtn" onClick={() => toggleDropdown(index)}>
+                        <li className="t-dropdown-item" key={index}>
+                            <button className="t-dropbtn" onClick={() => toggleDropdown(index)}>
                                 <h3>{dropdown.question}</h3>
-                                <div className="downarrow">
+                                <div className="t-downarrow">
                                     <img src="src/images/downarrow.svg" alt="Arrow" />
                                 </div>
                             </button>
                                 
-                            <div className={`dropdown-content ${dropdown.isOpen ? 'show' : ''}`}>
+                            <div className={`t-dropdown-content ${dropdown.isOpen ? 'show' : ''}`}>
                                 <p>
                                     {dropdown.answer}
                                 </p>

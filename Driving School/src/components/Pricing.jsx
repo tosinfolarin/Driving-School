@@ -18,7 +18,7 @@ const Pricing = () => {
                 <div className="p-heading">INTRODUCTION: £90 </div>
                 <br/>
                 <br/>
-                FOUR: 45 minute lessons <br/>
+                FOUR X 45 minute lessons <br/>
                 An introductory course to get you started<br/>
                 (This works out to be 2 Double lessons)
             </div>

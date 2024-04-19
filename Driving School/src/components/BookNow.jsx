@@ -1,9 +1,8 @@
 const BookNow = () => {
     return (  
         <div className="booking-container">
-            {/* <h2 className="book-now-text">Book Now</h2> */}
             <h2><a href="/book-now" className="book-now-text">Book Now</a></h2>
-            <div className="car-image-container">
+            <div className="car-book-container">
                 <img src='src/images/caroutlinenobackground.png' alt="BookButton" className="car-book-image" />
             </div>
         </div>

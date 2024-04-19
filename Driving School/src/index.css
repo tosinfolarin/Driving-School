@@ -5,50 +5,47 @@ body {
   
 } 
 
-/* body {
-  background-image: url('src/images/Backgroundpic.jpeg');
-  background-size: 95%;
-  background-position: center;
-} */
-
-/* base styles */
 * {
     font-family: "Oxygen", sans-serif;
     font-weight: 500;
     font-style: normal;
-
 }
 
 .LPlate {
   width: 15%;
   height: auto;
   transform: rotate(-35deg);
-  margin-right: 300px;
+  margin-right: 5%;
   position: relative;
   top:100px;
-  left: 200px;
+  left: 33%;
   margin-bottom: -40px;
 }
 
 .BusinessName{
   position: relative;
   bottom: -30px;
-  left: 400px;
+  left: 60%;
+}
+
+.logo-container {
+  position: relative;
+  right: 10%;
+  top: -40px;
+  
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  max-width: 1200px;
+  max-width: 85%;
   margin: 0 auto;
-  /* border-bottom: 1px solid #f2f2f2; */
   border-bottom: 1px solid #ff0000;
   
 }
 .navbar h1 {
   color: #ff0000;
-  position: relative;
-  right: 28px;
+  margin-right: auto;
   
 }
 .navbar .links {
@@ -93,11 +90,49 @@ body {
 .slogan{
   position: relative;
   font-size: 25px;
-  text-shadow: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-weight: bold;
+  font-weight:500;
+  font-style: italic;
   
 }
+
+
+
+/* For Smaller Screens*/
+
+@media screen and (max-width: 768px) {
+  .LPlate {
+    width: 30%; 
+  }
+
+  .BusinessName {
+    font-size: 10px; 
+    left: 35%; 
+  }
+
+  .logo-container {
+    right: 5%; 
+  }
+
+  .navbar h1 {
+    margin-right: auto; 
+  }
+
+  .navbar .links {
+    margin-left: auto;
+  }
+
+  .links a:last-child {
+    padding: 6px 12px; 
+  }
+}
+
+
+
+
+
+
 
 .book-now-text:hover{
   color:rgb(255, 0, 0);
@@ -107,77 +142,34 @@ body {
 .booking-container {
   position: relative;
   text-align: center;
+  margin-top: -3%;
 }
 
 .book-now-text {
   position: absolute;
-  top: 53%;
+  top: 68%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
-  font-size: 24px;
-  /* padding: 10px; */
+  font-size: 1.8vw;
   z-index: 1; /* Sets a higher z-index for the text */
   text-decoration: none;
-}
-
-
-
-
-
-
-/* bigger screens */
-@media screen and (min-width: 1200px) {
-  .book-now-text {
-    font-size: 27px;
-  }
-}
-
-/* medium screens */
-@media screen and (max-width: 768px) {
-  .book-now-text {
-    font-size: 14px; /* Decrease font size for smaller screens */
-  }
-}
-
-/* smaller screens */
-@media screen and (max-width: 480px) {
-  .book-now-text {
-    font-size: 12px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-.car-image-container {
-  position: relative;
-  top: -40px;
 }
 
 
 .car-book-image {
   width: 20%;
   height: auto;
-  margin-bottom: -40px;
+  margin-bottom: -2.7%;
   
 }
 
 
 
 
-/* smaller screens */
-@media screen and (max-width: 480px) {
-  .car-book-image {
-    width: 40%; /* Decrease image size for smaller screens */
-    
-  }
-}
+
+
+
+
 
 
 
@@ -190,12 +182,12 @@ body {
 .trinity-info-holder {
   padding-top: 5px;
   padding-bottom: 5px;
-  text-align: center; /* Center-align the content */
+  text-align: center; 
 }
 
 .trinity-info {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -230,6 +222,7 @@ body {
   border-radius: 10px;
   width: 300px;
   height: 300px;
+  height: auto;
   border: 1px solid transparent; /* Transparent border */
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
@@ -245,26 +238,34 @@ body {
 
 
 
-
-
-/* Bigger screens */
-@media screen and (max-width: 1200px) {
-  .testimonial-item {
-    width: 90%; /* Adjusted width for medium-sized screens */
-  }
-}
-
-/* Smaller Screens */
-@media screen and (max-width: 768px) {
+/*  Screens smaller than 768px  */
+@media (max-width: 768px) {
   .testimonials {
-    flex-direction: column; /* Display images in a column on smaller screens */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; /* vertical stacking on smaller screens */
+    align-items: center; 
+    gap: 20px; /* Reduces the spacing between each item */
   }
-
+  
   .testimonial-item {
-    width: 90%; /* Adjusted width for smaller screens */
+    width: 100%; /* Make items full width */
+  }
+  
+  .student-img {
+    width: 100%; /* images are now full width of their containers */
+    height: auto; 
   }
 }
+
+/* For smartphones */
+@media (max-width: 576px) {
+  .testimonial-item {
+    width: 100%; /* Make items full width */
+  }
+}
+
+
+
+
 
 
 .Steps-container {
@@ -289,12 +290,20 @@ body {
 
 
 .road-image {
-  width: 100%; 
+  width: auto; 
   max-width: 70px;
   max-height: 90px; 
   opacity: 0.3; 
  
 }
+
+
+
+
+
+
+
+
 
 
 /* PRICING STYLING */
@@ -305,14 +314,18 @@ body {
   padding: 20px; 
   max-width: 800px;
   padding-bottom: 50px;
-
-
   margin: 0 auto;
 }
 
 .Pricing {
   text-align: center;
   padding-top: 10px;
+  
+}
+.Pricing h1{
+  text-align: center;
+  padding-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   
 }
 
@@ -330,7 +343,6 @@ body {
 
 .flex-pchild {
   flex: 1;
-  /* background-color: rgb(255, 0, 0, 0.5); */
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px
   
@@ -344,6 +356,307 @@ body {
   font-weight: bold;
   font-size: 25px;
 }
+
+
+
+
+/* Screens smaller than 768px */
+@media (max-width: 768px) {
+  .flex-pcontainer {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+  
+  .flex-pchild {
+    margin-bottom: 20px; /* spacing between child elements */
+    width: 100%; /* full width setting on child elements  */
+  }
+  
+  .flex-pchild:first-child {
+    margin-right: 0; /* Remove right margin for first child */
+  }
+}
+
+/* For smartphones (smaller than 576px)  */
+@media (max-width: 576px) {
+  .Price-container {
+    padding: 10px; /* Reduces padding */
+    padding-bottom: 30px; /* Reduces bottom padding */
+  }
+  
+  .p-heading {
+    font-size: 20px; /* Decreases font size */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*About Me*/
+
+.aboutme-page {
+  display: flex;
+}
+
+.pic-box {
+  flex: .5;
+  border: 2px solid rgb(255, 0, 0);
+}  
+
+.instructor-image{
+  height: 400px;
+  width: 600px;
+}
+
+.flex-c {
+  flex: 1;
+  border: 2px solid rgb(255, 0, 0);
+  margin-left: 20px;
+}
+
+/* For screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+  .aboutme-page {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+  
+  .pic-box {
+    flex: none; /* Reset flex to default behavior */
+    width: 100%; /* Make the image box full width of the screen */
+    margin-bottom: 20px; /* Adds spacing between the image and the text */
+  }
+  
+  .instructor-image {
+    width: 100%; /* Makes image fill its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .flex-c {
+    flex: none; /* Reset flex to default behavior */
+    width: 100%; /* Make the text box full width */
+  }
+}
+
+/* For screens smaller than 576px (typical smartphones) */
+@media (max-width: 576px) {
+  .instructor-image {
+    height: 300px; /* Decrease image height */
+  }
+}
+
+
+
+
+
+
+
+
+/* TEST QUESTIONS PAGE */
+
+.showme-header,
+.tellme-header{
+  text-align: center;
+}
+
+.show-questions{
+   display: flex;
+   justify-content: center; /* centers content */
+   text-align: center;
+   align-items: center; /* centers content */
+   height: 180vh; /* full viewport height */
+}
+
+
+.flex-test {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.flex-one {
+  flex: 1;
+  max-width: 100%;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+
+.testVid {
+  border: none;
+  position: relative;
+  width: 100%;
+  top: 95px;
+
+}
+.testText {
+  border: none;
+  position: relative;
+  top: 10px;
+
+} 
+
+
+.t-container{
+  width: 70%;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #ecebeb;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 40px 50px;
+  
+}
+
+.t-container hr{
+  height: 2px;
+  border: none;
+  background: grey;
+}
+
+.t-container h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.t-container ul li{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.t-container button{
+  margin: auto;
+  width: 40%;
+  height: 50px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+
+.t-container button:hover{
+  width: 50%;
+  background-color: red;
+  transition: 1s;
+}
+
+.correct{
+  background: rgb(46, 255, 46);
+}
+
+.incorrect{
+  background: rgb(255, 110, 110);
+} 
+
+
+
+
+
+.t-dropbtn {
+  background-color:  rgb(255, 0, 0);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 600px;
+}
+
+.t-dropdown-item {
+  list-style-type: none;
+  text-align: center;
+}
+
+.t-dropdown-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.t-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #ffffffea;
+  padding: 2px;
+  max-width: 598px;
+  text-align: center;
+  transition: max-height 1s ease;
+}
+
+.t-dropdown-content.show {
+  max-height: 100px;
+  max-width: 598px;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.t-downarrow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.t-downarrow img {
+  max-width: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* For screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+  .t-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* For screens smaller than 576px (typical smartphones) */
+@media (max-width: 576px) {
+  .show-questions {
+    height: auto;
+  }
+
+  .testVid, .testText {
+    position: static;
+    top: auto;
+  }
+
+  .flex-test {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -410,136 +723,30 @@ body {
 }
 
 
-/* TEST QUESTIONS PAGE */
 
-.showme-header{
-  text-align: center;
-}
-
-.show-questions{
-   display: flex;
-   justify-content: center; /* horizontally center */
-   text-align: center;
-   align-items: center; /* vertically center */
-   height: 180vh; /* full viewport height */
-}
-
-
-.flex-test {
-  display: flex;
+/* For screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+  .dropbtn {
+    width: 100%; /* Make button full width on smaller screens */
+  }
   
-}
-
-.flex-one {
-  flex: 1;
-  /* border: 2px solid rgb(240, 62, 17); */
-}  
-
-.flex-child:first-child {
-  margin-right: 20px;
-} 
-
-
-.testVid {
-  border: none;
-  position: relative;
-  top: 95px;
-
-}
-.testText {
-  border: none;
-  position: relative;
-  top: 10px;
-
-} 
-
-.tellme-header{
-  text-align: center;
-}
-
-.t-container{
-  width: 500px;
-  margin: auto;
-  margin-bottom: 20px;
-  background: #ecebeb;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 40px 50px;
+  .dropdown-container {
+    padding: 0 10px; /* Add some padding to container */
+  }
   
+  .dropdown-content {
+    max-width: calc(100% - 20px); /* Set max-width to 100% minus padding */
+  }
 }
 
-.t-container hr{
-  height: 2px;
-  border: none;
-  background: grey;
+/* For screens smaller than 576px (typical smartphones) */
+@media (max-width: 576px) {
+  .dropdown-content.show {
+    max-height: 200px; /* Adjust max-height for better display on small screens */
+  }
 }
 
-.t-container h2{
-  font-size: 20px;
-  font-weight: 500;
-}
 
-.t-container ul li{
-  display: flex;
-  align-items: center;
-  height: 70px;
-  padding-left: 10px;
-  border: 1px solid gray;
-  border-radius: 8px;
-  font-size: 15px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.t-container button{
-  margin: auto;
-  width: 250px;
-  height: 50px;
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  border-radius: 8px;
-}
-
-.t-container button:hover{
-  width: 270px;
-  background-color: red;
-  transition: 1s;
-}
-
-.correct{
-  background: rgb(46, 255, 46);
-}
-
-.incorrect{
-  background: rgb(255, 146, 146);
-} 
-
-
-
-/*About Me*/
-
-.aboutme-page {
-  display: flex;
-}
-
-.pic-box {
-  flex: .5;
-  border: 2px solid rgb(255, 0, 0);
-}  
-
-.instructor-image{
-  height: 400px;
-  width: 600px;
-}
-
-.flex-c {
-  flex: 1;
-  border: 2px solid rgb(255, 0, 0);
-  margin-left: 20px;
-}
 
 
 
@@ -612,12 +819,14 @@ body {
   justify-content: center;
   margin: 0 auto;
   background-color: white;
+  border-radius: 8px;
   margin-top: 20px;
 }
 
 .search-result {
   padding: 10px; 
 }
+
 
 .business-info{
   min-width: 200px; 
@@ -676,6 +885,8 @@ body {
 /* BOOKING PAGE */
 
 
+
+
 .form-container {
   background-color: #fc9292;
   border-radius: 8px;
@@ -687,6 +898,67 @@ body {
   align-items: center;
   padding: 20px;
   margin-top: 20px;
+}
+
+.BForm {
+  background-color: #ffadad;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: center; 
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.BForm h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  
+}
+
+.BForm input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.BForm label {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between labels */
+}
+
+.BForm input[type="text"],
+.BForm input[type="number"],
+.BForm input[type="email"] {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.BForm input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  margin-top: 5%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.BForm input[type="submit"]:hover {
+  transition: 1s;
+  background-color: #ff0000;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
 }
 
 

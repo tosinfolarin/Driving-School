@@ -6,6 +6,7 @@ import SubNav from "../SearchResultsSummary/SearchResultsSummary";
 import { useBusinessSearch } from "../../hooks/yelp-api/useBusinessSearch";
 
 
+
 const Search = () => {
   
 
@@ -32,6 +33,7 @@ const Search = () => {
                 <Navbar />
             </div>
             <div>
+              
                <SearchBar term={term} location={locationParam} search={search}/>
                <SubNav term={term} 
                location={locationParam} 

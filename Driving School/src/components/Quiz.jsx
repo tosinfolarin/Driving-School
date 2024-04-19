@@ -6,12 +6,15 @@ import { useRef } from 'react';
 
 // using this tutorial I was able to create this quiz https://www.youtube.com/watch?v=VMZ7lcSdVnY
 const Quiz = () => {
+
+    // Initialising states
     const [index, setIndex] = useState(0); 
     const [question, setQuestion] = useState(data[index]);
     let [lock, setLock] = useState(false);
     let [score, setScore] = useState(0)
     let [result, setResult] = useState(false)
 
+    
     let Option1 = useRef(null);
     let Option2 = useRef(null);
     let Option3 = useRef(null);

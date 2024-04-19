@@ -1,5 +1,4 @@
-// const Tesimonials = () => {
-//     return ( 
+
 //         <div className ="testimonals">
 //            <div>
 //             <div className="student-img-container">
@@ -8,43 +7,21 @@
 //              <p className = "testimonial-text"> I have tried a few other local driving schools but trinity is by far the best. I am pleased to say I was able to pass first time.</p>
 //             </div>
 
-//             <div>
-//             <div className="student-img-container">
-//              <img src = 'https://placehold.co/400x400' alt='student picture' className="student-img" />
-//             </div>
-//              <p className = "testimonial-text"> Being someone who is naturally shy, Olu at Trinity provided a safe space for me to drive and feel comfortable to ask any question related to driving</p>
-            
-//             </div>
-
-//             <div>
-//             <div className="student-img-container">
-//              <img src = 'https://placehold.co/400x400' alt='student picture' className="student-img" />
-//             </div>
-//              <p className = "testimonial-text"> This is some text</p>
-//             </div>
-
-//         </div>
-       
-//      );
-// }
- 
-// export default Tesimonials;
-
 
 const Tesimonials = () => {
     return ( 
         <div className= "all-testimonials">
-        <div className ="testimonials">
-            <div className="testimonial-item">
+        <div className ="testimonials" role="list">
+            <div className="testimonial-item" role="listitem" aria-labelledby="testimonial1">
                 <div className="student-img-container">
                     <img src='src/images/ipassed.jpeg' alt='student picture' className="student-img"/>
                 </div>
                 <div className="testimonial-text-container">
-                    <p className="testimonial-text"> I have tried a few other local driving schools but Trinity is by far the best. I am pleased to say I was able to pass first time.</p>
+                    <p className="testimonial-text" id="testimonial1"> I have tried a few other local driving schools but Trinity is by far the best. I am pleased to say I was able to pass first time.</p>
                 </div>
             </div>
 
-            <div className="testimonial-item">
+            <div className="testimonial-item" role="listitem" aria-labelledby="testimonial2">
                 <div className="student-img-container">
                 <img src='src/images/ipassed.jpeg' alt='student picture' className="student-img"/>
                 </div>
@@ -53,7 +30,7 @@ const Tesimonials = () => {
                 </div>
             </div>
 
-            <div className="testimonial-item">
+            <div className="testimonial-item" role="listitem" aria-labelledby="testimonial3">
                 <div className="student-img-container">
                 <img src='src/images/ipassed.jpeg' alt='student picture' className="student-img"/>
                 </div>
@@ -84,10 +61,10 @@ const Tesimonials = () => {
 
             <div className="testimonial-item">
                 <div className="student-img-container">
-                    <img src='https://placehold.co/300x300' alt='student picture' className="student-img" />
+                    <img src='src/images/you.jpeg' alt='student picture' className="student-img" />
                 </div>
                 <div className="testimonial-text-container">
-                    <p className="testimonial-text"> Be the next Success Story </p>
+                    <p className="testimonial-text"> COME AND BE THE NEXT SUCCESS STORY! </p>
                 </div>
             </div>
         </div>
