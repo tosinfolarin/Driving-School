@@ -5,11 +5,11 @@ import { zodResolver } from "@hookform/resolvers/zod"
 const BForm  = () => {
 
     const schema = z.object({
-        firstName: z.string().min(2, { message: "First name must be at least 2 characters" }).max(30),
-        lastName: z.string().min(2, { message: "Last name must be at least 2 characters" }).max(30),
-        email: z.string().email({ message: "Invalid email address" }),
-        age: z.number().min(17, { message: "You must be at least 17 to book with us" }).max(120, { message: "Please enter a valid age" }),
-        postCode: z.string().min(3, { message: "Post code must be at least 3 characters" }).max(9, { message: "Post code must be no more than 9 characters" }),
+        firstName: z.string().min(2, { message: "First name must be at least 2 characters long" }).max(30),
+        lastName: z.string().min(2, { message: "Last name must be at least 2 characters long" }).max(30),
+        email: z.string().email({ message: "Please enter a valid email address" }),
+        age: z.number().min(17, { message: "You must be at least 17 years old to book with us." }).max(120, { message: "Please enter a valid age" }),
+        postCode: z.string().min(3, { message: "Please enter a valid post code" }).max(8, { message: "Please enter a valid post code" }),
         contactNumber: z.string().min(11, { message: "Please enter a valid contact number" }).max(16),
     });
 

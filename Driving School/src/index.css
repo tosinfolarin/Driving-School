@@ -241,7 +241,7 @@ body {
 /*  Screens smaller than 768px  */
 @media (max-width: 768px) {
   .testimonials {
-    flex-direction: column; /* vertical stacking on smaller screens */
+    flex-direction: column; /* vertical alignment on smaller screens */
     align-items: center; 
     gap: 20px; /* Reduces the spacing between each item */
   }
@@ -367,8 +367,8 @@ body {
   }
   
   .flex-pchild {
-    margin-bottom: 20px; /* spacing between child elements */
-    width: 100%; /* full width setting on child elements  */
+    margin-bottom: 20px; /* this is spacing between child elements */
+    width: 100%; /* this brings full width setting on child elements  */
   }
   
   .flex-pchild:first-child {
@@ -405,19 +405,23 @@ body {
 }
 
 .pic-box {
-  flex: .5;
-  border: 2px solid rgb(255, 0, 0);
-}  
-
-.instructor-image{
-  height: 400px;
-  width: 600px;
+  flex: 0 1 30%; /* Adjust flex properties as needed */
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
 }
+
+.instructor-image {
+  height: 250px;
+  width: 250px;}
+
 
 .flex-c {
   flex: 1;
   border: 2px solid rgb(255, 0, 0);
   margin-left: 20px;
+  padding: 20px;
 }
 
 /* For screens smaller than 768px (typical tablets) */
@@ -427,7 +431,7 @@ body {
   }
   
   .pic-box {
-    flex: none; /* Reset flex to default behavior */
+    flex: none; /* Resets flex to default behavior */
     width: 100%; /* Make the image box full width of the screen */
     margin-bottom: 20px; /* Adds spacing between the image and the text */
   }
@@ -438,7 +442,7 @@ body {
   }
   
   .flex-c {
-    flex: none; /* Reset flex to default behavior */
+    flex: none; /* Resets flex to default behavior */
     width: 100%; /* Make the text box full width */
   }
 }
@@ -727,7 +731,7 @@ body {
 /* For screens smaller than 768px (typical tablets) */
 @media (max-width: 768px) {
   .dropbtn {
-    width: 100%; /* Make button full width on smaller screens */
+    width: 100%; /* Makes button full width on smaller screens */
   }
   
   .dropdown-container {
@@ -735,14 +739,14 @@ body {
   }
   
   .dropdown-content {
-    max-width: calc(100% - 20px); /* Set max-width to 100% minus padding */
+    max-width: calc(100% - 20px); 
   }
 }
 
 /* For screens smaller than 576px (typical smartphones) */
 @media (max-width: 576px) {
   .dropdown-content.show {
-    max-height: 200px; /* Adjust max-height for better display on small screens */
+    max-height: 200px; /*  for display on small screens */
   }
 }
 
@@ -885,8 +889,6 @@ body {
 /* BOOKING PAGE */
 
 
-
-
 .form-container {
   background-color: #fc9292;
   border-radius: 8px;
@@ -908,14 +910,16 @@ body {
   max-width: 500px;
   margin: 0 auto;
   justify-content: center; 
-  padding: 10px;
+  padding: 15px;
   margin-top: 30px;
 }
 
 .BForm h1 {
   display: flex;
   justify-content: center;
-  text-decoration: underline;
+  
+  text-shadow: 2px 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+
   
 }
 
@@ -929,6 +933,7 @@ body {
 .BForm label {
   display: inline-block;
   margin-right: 10px; /* Adjust spacing between labels */
+  margin-top: 3px;
 }
 
 .BForm input[type="text"],

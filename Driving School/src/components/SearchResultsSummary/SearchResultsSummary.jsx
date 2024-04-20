@@ -11,7 +11,7 @@ const SubNav = (props) => {
                 {resultStats}
             </div>
 
-            <div className = 'f-container'>
+            {/* <div className = 'f-container'>
             
             
                 <button className="s-filters">
@@ -33,10 +33,10 @@ const SubNav = (props) => {
                     <span>Open Now</span>
                 </button>
                 <button className="button-cah">
-                    <span className="icon"><i className="fas fa-dollar-sign"></i></span>
+                    <span className="icon"><i className="fas fa-pound-sign"></i></span>
                     <span>Cashback</span>
                 </button>
-            </div>
+            </div> */}
             </div>
         
 
