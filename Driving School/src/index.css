@@ -87,6 +87,37 @@ body {
   transition: 0.6s;
 }
 
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar .links {
+    flex-direction: column;
+    right: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .BusinessName {
+    margin-bottom: 10px;
+    
+  }
+
+
+  .LPlate {
+    margin-bottom: 10px;
+    flex-direction: column;
+    top: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .navbar .links{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
 .slogan{
   position: relative;
   font-size: 25px;
@@ -103,7 +134,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .LPlate {
-    width: 30%; 
+    width: 30%;
+    flex-direction: column;
   }
 
   .BusinessName {
@@ -127,6 +159,9 @@ body {
     padding: 6px 12px; 
   }
 }
+
+
+
 
 
 
@@ -220,9 +255,8 @@ body {
 
 .student-img {
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
-  height: auto;
+  width: 280px;
+  height: 280px;
   border: 1px solid transparent; /* Transparent border */
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
@@ -238,30 +272,57 @@ body {
 
 
 
-/*  Screens smaller than 768px  */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .all-testimonials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .testimonials {
-    flex-direction: column; /* vertical alignment on smaller screens */
+    flex-direction: column;
     align-items: center; 
-    gap: 20px; /* Reduces the spacing between each item */
+    gap: 20px;
   }
-  
+
   .testimonial-item {
-    width: 100%; /* Make items full width */
+    width: 80%;
   }
-  
+
   .student-img {
-    width: 100%; /* images are now full width of their containers */
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
 }
 
-/* For smartphones */
-@media (max-width: 576px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .testimonials {
+    justify-content: center;
+    gap: 40px;
+  }
+
   .testimonial-item {
-    width: 100%; /* Make items full width */
+    width: 45%;
   }
 }
+
+
+@media only screen and (min-width: 992px) {
+  .all-testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .testimonials {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .testimonial-item {
+    width: 350px;
+  }
+}
+
+
 
 
 
@@ -270,8 +331,8 @@ body {
 
 .Steps-container {
     display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center; /* Centers items horizontally */
+    flex-direction: column; 
+    align-items: center; 
     max-width: 1200px;
     margin: 0 auto; /* Centers the container horizontally */
     padding-top: 10px;
@@ -285,7 +346,7 @@ body {
   border: 2px solid rgb(142, 1, 1);
   border-radius: 8px;
   background-color: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 20px;
 }
 
 
@@ -360,7 +421,6 @@ body {
 
 
 
-/* Screens smaller than 768px */
 @media (max-width: 768px) {
   .flex-pcontainer {
     flex-direction: column; /* Stack items vertically on small screens */
@@ -372,26 +432,32 @@ body {
   }
   
   .flex-pchild:first-child {
-    margin-right: 0; /* Remove right margin for first child */
+    margin-right: 0; /* Removes right margin for first child */
   }
 }
 
-/* For smartphones (smaller than 576px)  */
-@media (max-width: 576px) {
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
   .Price-container {
-    padding: 10px; /* Reduces padding */
-    padding-bottom: 30px; /* Reduces bottom padding */
+    max-width: 600px;
   }
-  
-  .p-heading {
-    font-size: 20px; /* Decreases font size */
+
+  .Pricing h1 {
+    font-size: 28px;
   }
 }
 
 
+@media only screen and (min-width: 992px) {
+  .Price-container {
+    max-width: 800px;
+    padding: 20px;
+  }
 
-
-
+  .Pricing h1 {
+    font-size: 32px;
+  }
+}
 
 
 
@@ -428,11 +494,13 @@ body {
 @media (max-width: 768px) {
   .aboutme-page {
     flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+    
   }
   
   .pic-box {
-    flex: none; /* Resets flex to default behavior */
-    width: 100%; /* Make the image box full width of the screen */
+    flex: none; /* Resets flex */
+    width: 100%; /* Makes the image box the full width of the screen */
     margin-bottom: 20px; /* Adds spacing between the image and the text */
   }
   
@@ -447,13 +515,40 @@ body {
   }
 }
 
-/* For screens smaller than 576px (typical smartphones) */
-@media (max-width: 576px) {
-  .instructor-image {
-    height: 300px; /* Decrease image height */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .pic-box {
+    flex: 0 1 40%;
+    
+  }
+
+  .flex-c {
+    flex: 1;
+    margin-left: 20px;
   }
 }
 
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .pic-box {
+    flex: 0 1 40%;
+  }
+
+  .flex-c {
+    flex: 1;
+    margin-left: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .pic-box {
+    flex: 0 1 30%;
+  }
+
+  .flex-c {
+    flex: 1;
+    margin-left: 20px;
+  }
+}
 
 
 
@@ -632,33 +727,40 @@ body {
 
 
 
-/* For screens smaller than 768px (typical tablets) */
-@media (max-width: 768px) {
-  .t-container {
-    width: 90%;
-    padding: 20px;
+/* For screens up to 900px */
+@media only screen and (max-width: 900px)  {
+  .showme-header,
+  .tellme-header {
+    text-align: center;
   }
-}
 
-/* For screens smaller than 576px (typical smartphones) */
-@media (max-width: 576px) {
   .show-questions {
-    height: auto;
+    height: auto; 
+
   }
 
-  .testVid, .testText {
-    position: static;
-    top: auto;
+  .testVid,
+  .testText {
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    
   }
 
-  .flex-test {
-    flex-direction: column;
+  .t-container {
+    width: 70%; 
+    padding: 20px 30px; 
   }
+
+ 
+  .t-container button {
+    width: 70%; 
+  }
+
+  .t-dropdown-container {
+    max-width: 70%; 
 }
-
-
-
-
+}
 
 
 
@@ -743,13 +845,40 @@ body {
   }
 }
 
-/* For screens smaller than 576px (typical smartphones) */
-@media (max-width: 576px) {
-  .dropdown-content.show {
-    max-height: 200px; /*  for display on small screens */
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .dropbtn {
+    width: 80%; 
+  }
+
+  .dropdown-container {
+    max-width: 80%; 
+  }
+
+  .dropdown-content {
+    max-width: 80%; 
   }
 }
 
+
+@media only screen and (min-width: 992px) {
+  .FAQs {
+    text-align: center;
+  }
+
+  .dropbtn {
+    width: 600px; 
+  }
+
+  .dropdown-container {
+    max-width: 800px; 
+    margin: 0 auto; /* Centers container horizontally */
+  }
+
+  .dropdown-content {
+    max-width: 598px; 
+  }
+}
 
 
 
@@ -833,6 +962,7 @@ body {
 
 
 .business-info{
+  width: 250px;
   min-width: 200px; 
 }
 
@@ -857,10 +987,18 @@ body {
   margin: 0 1px;
 }
 
-.business-image{
+
+.business-image-container{
   margin-right: 1rem;
   max-width: 210px;
   max-height: 210px;
+  background-image: url('src/images/NoImageAvailable.png');
+  overflow: hidden;
+}
+.business-image{
+  margin-right: 1rem;
+  width: 100%;
+  height: 100%;  
 }
 
 
@@ -889,18 +1027,6 @@ body {
 /* BOOKING PAGE */
 
 
-.form-container {
-  background-color: #fc9292;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
-  justify-content: center; 
-  align-items: center;
-  padding: 20px;
-  margin-top: 20px;
-}
 
 .BForm {
   background-color: #ffadad;
@@ -917,7 +1043,6 @@ body {
 .BForm h1 {
   display: flex;
   justify-content: center;
-  
   text-shadow: 2px 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
 
   
@@ -932,7 +1057,7 @@ body {
 
 .BForm label {
   display: inline-block;
-  margin-right: 10px; /* Adjust spacing between labels */
+  margin-right: 10px; /* Adjusts spacing between labels */
   margin-top: 3px;
 }
 
@@ -964,6 +1089,11 @@ body {
 .errorMessage {
   color: red;
   font-size: 14px;
+}
+
+.thank-you-message {
+  display: flex;
+  justify-content: center;
 }
 
 

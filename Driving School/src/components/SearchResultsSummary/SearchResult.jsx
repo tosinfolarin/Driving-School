@@ -16,33 +16,25 @@ const SearchResult = (props) => {
     
 
         
-        <div className= "search-results">
-            <img src = {b.image_url} alt='business' className="business-image" />
-        
-
-            <div className ="business-info">
-            
-                <h3 className ="business-name"> {b.name} </h3>
-                <BusinessRating reviewCount={b.review_count} rating ={b.rating} />
-                <a href="https://www.yelp.co.uk/" target="_blank" rel="noopener noreferrer">
-                    <img src='src/images/yelp-logo.png' alt='yelp-logo' className="yelp-logo" />
-                </a>
-                <p>{tags}</p>
-            </div>
-
-
-            <div className = "contact-info">
-                <p>{b.phone}</p>
-                {addressLines}
-                
-            </div>
-            <div>
-              
-            
+        <div className="search-results">
+        <div className="business-image-container">
+            <img src={b.image_url} alt="business" className="business-image" />
         </div>
-
-
+    
+        <div className="business-info">
+            <h3 className="business-name">{b.name}</h3>
+            <BusinessRating reviewCount={b.review_count} rating={b.rating} />
+            <a href="https://www.yelp.co.uk/" target="_blank" rel="noopener noreferrer">
+                <img src="src/images/yelp-logo.png" alt="yelp-logo" className="yelp-logo" />
+            </a>
+            <p>{tags}</p>
         </div>
+    
+        <div className="contact-info">
+            <p>{b.phone}</p>
+            {addressLines}
+        </div>
+    </div>
             
 
      );

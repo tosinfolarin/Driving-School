@@ -1,32 +1,39 @@
 import { z } from "zod";
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 
-const BForm  = () => {
+const BForm = () => {
+  const [submitted, setSubmitted] = useState(false);
 
-    const schema = z.object({
-        firstName: z.string().min(2, { message: "First name must be at least 2 characters long" }).max(30),
-        lastName: z.string().min(2, { message: "Last name must be at least 2 characters long" }).max(30),
-        email: z.string().email({ message: "Please enter a valid email address" }),
-        age: z.number().min(17, { message: "You must be at least 17 years old to book with us." }).max(120, { message: "Please enter a valid age" }),
-        postCode: z.string().min(3, { message: "Please enter a valid post code" }).max(8, { message: "Please enter a valid post code" }),
-        contactNumber: z.string().min(11, { message: "Please enter a valid contact number" }).max(16),
-    });
+  const schema = z.object({
+    firstName: z.string().min(2, { message: "First name must be at least 2 characters long" }).max(30),
+    lastName: z.string().min(2, { message: "Last name must be at least 2 characters long" }).max(30),
+    email: z.string().email({ message: "Please enter a valid email address" }),
+    age: z.number().min(17, { message: "You must be at least 17 years old to book with us." }).max(120, { message: "Please enter a valid age" }),
+    postCode: z.string().min(3, { message: "Please enter a valid post code" }).max(8, { message: "Please enter a valid post code" }),
+    contactNumber: z.string().min(11, { message: "Please enter a valid contact number" }).max(16),
+  });
 
-    
-    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: zodResolver(schema) });  
-    
-    const submitData = (data) => {
-    console.log(data)
-}
+  const { register, handleSubmit, formState: { errors } } = useForm({ resolver: zodResolver(schema) });
 
+  const submitData = (data) => {
+    console.log(data);
+    setSubmitted(true);
+  };
 
+  if (submitted) {
+    return (
+      <div className="thank-you-message">
+        <h2>Thank you for your interest! You will be contacted within the next 7 days.</h2>
+      </div>
+    );
+  }
 
-    return ( 
-        <div className="BForm">
-            
-            <form onSubmit={handleSubmit(submitData)} className="BForm">
-                <h1>
+  return (
+    <div className="BForm">
+      <form onSubmit={handleSubmit(submitData)} className="BForm">
+      <h1>
                 Book Now 
                 </h1>
                 <h3> Please fill out the form and you will be contacted within the next 7 days.</h3>
@@ -93,7 +100,7 @@ const BForm  = () => {
 
                 <label>Which Lesson Package are you interested in?: </label>
                 <select {...register("lessonPackage")}>
-                <option value="basic">None</option>
+                <option value="basic">Theory Assistance</option>
                     <option value="basic"> Introduction (4 X 45 minute lessons) - £90</option>
                     <option value="">6 Lessons (3 x 2 hour Lessons) - £195</option>
                     <option value="standard">12 Lessons (6 x 2 hour Lessons) - £384</option>
@@ -104,14 +111,9 @@ const BForm  = () => {
 
 
                 <input type="submit"/>
+      </form>
+    </div>
+  );
+};
 
-                
-            </form>
-
-            
-
-        </div>
-     );
-}
- 
-export default BForm ;
+export default BForm;
