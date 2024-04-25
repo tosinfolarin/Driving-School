@@ -1,15 +1,23 @@
-const SubNav = (props) => {
-    let resultStats = null;
-    if (props.amountResults && props.showResults) {
-        resultStats = <p> Showing 1-{props.showResults} out of {props.amountResults} </p>
-    }
+// const SubNav = (props) => {
+//     let resultStats = null;
+//     if (props.amountResults && props.showResults) {
+//         resultStats = <p> Showing 1-{props.showResults} out of {props.amountResults} </p>
+//     }
 
-    return ( 
-        <div className ='s-container'>
-            <div className="subtitle">
-            <h1>{props.term} <span style={{ fontStyle: 'italic', fontWeight: 'bold' }}>{props.location}</span></h1>
-                {resultStats}
-            </div>
+//     return ( 
+//         <div className ='s-container'>
+//             <div className="subtitle">
+//             <h1>{props.term} <span style={{ fontStyle: 'italic', fontWeight: 'bold' }}>{props.location}</span></h1>
+//                 {resultStats}
+//             </div>
+
+
+
+
+// NOT USING THE FOLLOWING
+
+
+
 
             {/* <div className = 'f-container'>
             
@@ -37,15 +45,28 @@ const SubNav = (props) => {
                     <span>Cashback</span>
                 </button>
             </div> */}
-            </div>
+
+
+
+
+
+
+
+
+
+
+// //Using THIS
+
+
+//             </div>
         
 
            
         
         
         
-     );
+//      );
      
-}
+// }
  
-export default SubNav;
+// export default SubNav;

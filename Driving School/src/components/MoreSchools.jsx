@@ -1,19 +1,20 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
-import BookNow from "./BookNow";
+// import BookNow from "./BookNow";
 import Footer from "./Footer";
-import SubNav from "./SearchResultsSummary/SearchResultsSummary";
+// import SubNav from "./SearchResultsSummary/SearchResultsSummary";
 import SearchBar from "./SearchBar/SearchBar";
-import SearchResults from "./SearchResultsSummary/SearchResults";
+// import SearchResults from "./SearchResultsSummary/SearchResults";
+import GoogleSearchResults from "./googleMapsApi/googleresults";
 
 
 const MSchools = (props) => {
   
-  function search(term, location) {
-    const urlEncodedTerm = encodeURI(term);
-    const urlEncodedLocation = encodeURI(location);
-    window.location.href = `/search?find_desc=${urlEncodedTerm}&find_loc=${urlEncodedLocation}`;
-  }
+  // function search(term, location) {
+  //   const urlEncodedTerm = encodeURI(term);
+  //   const urlEncodedLocation = encodeURI(location);
+  //   window.location.href = `/search?find_desc=${urlEncodedTerm}&find_loc=${urlEncodedLocation}`;
+  // }
 
   return (
     <div>
@@ -21,12 +22,13 @@ const MSchools = (props) => {
         <Navbar/>
         <div className="header">
           <Home/>
-          <BookNow/>
+          {/* <BookNow/> */}
         </div>
-        <SearchBar term={props.term} location={props.location}  search={search}/>
-        <SubNav/>
+        {/* <SearchBar term={props.term} location={props.location}  search={search}/> */}
+        {/* <SubNav/> */}
+        <GoogleSearchResults/>
         {/* <SearchResult/> */}
-        <SearchResults/>
+        {/* <SearchResults/> */}
       </div>
       <Footer/>
     </div>

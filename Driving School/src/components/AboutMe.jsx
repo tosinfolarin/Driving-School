@@ -2,7 +2,7 @@ const AboutMe = () => {
     return ( <div className="aboutme-page">
 
     <div className="pic-box">
-    <img src = 'src/images/driving-instructor.jpeg' alt='instructors picture' className="instructor-image" />
+    <img src = 'src/images/instructorPic.png' alt='instructors picture' className="instructor-image" />
     </div>
     
     

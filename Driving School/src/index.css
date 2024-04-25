@@ -11,6 +11,10 @@ body {
     font-style: normal;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .LPlate {
   width: 15%;
   height: auto;
@@ -911,6 +915,7 @@ body {
   color: #ff0000;
   background-color: black;
   transition: 1s ease;
+  cursor: pointer; /* Show pointer cursor on hover */
 }
 .subtitle {
   background-color: rgb(224, 224, 224);
@@ -1135,4 +1140,57 @@ body {
   width: 20px;
   height: auto;
   mix-blend-mode: multiply;
+}
+
+
+
+
+
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  height: 300px;
+  width: 600px;
+}
+
+.search-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-options input,
+.search-options select {
+  margin-bottom: 5px;
+}
+
+.schools-info-list {
+  width: 100%;
+  overflow-y: scroll;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-width: 3px;
+
+  
+}
+
+
+#placesList {
+  list-style-type: none;
+  font-size: larger;
+  padding: 20px;
+  
+}
+
+#placesList li {
+  padding-bottom: 20px;
+  text-decoration: none; /* Remove default underline */
+  
 }

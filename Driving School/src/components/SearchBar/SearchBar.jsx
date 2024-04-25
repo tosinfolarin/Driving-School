@@ -26,7 +26,7 @@ function SearchBar(props) {
   return (
     <form className="inputwithbutton">
       <div>
-        <h1 className="Instructor Search">Search For Schools in Your Area</h1>
+        <h1 className="Instructor Search">Search in Your Area</h1>
       </div>
       <div>
       <Input type="text" 

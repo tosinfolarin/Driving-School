@@ -1,23 +1,23 @@
-import SearchResult from "./SearchResult";
+// import SearchResult from "./SearchResult";
 
 
-const SearchResults = (props) => {
-    console.log(props,'SEARCH RESULTS');
+// const SearchResults = (props) => {
+//     console.log(props,'SEARCH RESULTS');
 
     
 
-    if (!props.businesses || !props.businesses.length) {
-        return (<div>No Current Search Results</div>);
-    }
+//     if (!props.businesses || !props.businesses.length) {
+//         return (<div>No Current Search Results</div>);
+//     }
 
-    const searchResults = props.businesses.map(b => <SearchResult key={b.id} business={b}/>)
+//     const searchResults = props.businesses.map(b => <SearchResult key={b.id} business={b}/>)
     
     
-    return ( 
-        <div className = "search-results">
-            {searchResults}
-        </div>
-     );
-}
+//     return ( 
+//         <div className = "search-results">
+//             {searchResults}
+//         </div>
+//      );
+// }
  
-export default SearchResults;
+// export default SearchResults;

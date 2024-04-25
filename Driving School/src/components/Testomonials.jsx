@@ -43,7 +43,7 @@ const Tesimonials = () => {
         <div className ="testimonials">
             <div className="testimonial-item">
                 <div className="student-img-container">
-                <img src='src/images/ipassed.jpeg' alt='student picture' className="student-img"/>
+                <img src='src/images/PassingPic3.png' alt='student picture' className="student-img"/>
                 </div>
                 <div className="testimonial-text-container">
                     <p className="testimonial-text"> Not only did Trinity help me with my practical exam, there was a lot of support when it came preparing for my theory exam as well.</p>
@@ -52,7 +52,7 @@ const Tesimonials = () => {
 
             <div className="testimonial-item">
                 <div className="student-img-container">
-                <img src='src/images/ipassed.jpeg' alt='student picture' className="student-img"/>
+                <img src='src/images/PassingPic4.png' alt='student picture' className="student-img"/>
                 </div>
                 <div className="testimonial-text-container">
                     <p className="testimonial-text"> I had failed a few times with other driving schools but once I switched to Trinity, I understood the difference in quality and I was able to pass with my first attempt.</p>
@@ -64,7 +64,7 @@ const Tesimonials = () => {
                     <img src='src/images/you.jpeg' alt='student picture' className="student-img" />
                 </div>
                 <div className="testimonial-text-container">
-                    <p className="testimonial-text"> COME AND BE THE NEXT SUCCESS STORY! </p>
+                    <p className="testimonial-text"> BE THE NEXT SUCCESS STORY! </p>
                 </div>
             </div>
         </div>

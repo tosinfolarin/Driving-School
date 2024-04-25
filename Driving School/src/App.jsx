@@ -13,7 +13,7 @@ import MSchools from './components/MoreSchools';
 import AboutMePage from './components/AboutMePage';
 import BookingPage from './components/BookingPage';
 
-import Search from './components/Search/Search';
+// import Search from './components/Search/Search';
  
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
 
 
 
-        <Route path="/search" element={<Search/>}/>
+        {/* <Route path="/search" element={<Search/>}/> */}
       </Routes>
     </Router>
   );
