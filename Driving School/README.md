@@ -41,7 +41,7 @@ hook form resolver
 for star:
 https://github.com/smastrom/react-rating
 
-If a user decides that they want to book an appointment with Trinity Driving School, they have the option to fill in a form which would be submitted to the
+If a user decides that they want to book an appointment with Trinity Driving School, they have the option to fill in a form which would be submitted to the database. This currently goes to the
 https://www.youtube.com/watch?v=dldjCPa9ZW4
 
 
