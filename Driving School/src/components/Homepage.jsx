@@ -3,7 +3,7 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
-import Tesimonials from "./Testomonials";
+import Testimonials from "./Testomonials";
 import BusinessInfo from "./BusinessInfo";
 import Steps from "./Steps";
 
@@ -18,12 +18,11 @@ const Homepage = () => {
           </div>
             <BookNow/>
             <BusinessInfo/>
-            
-            <Tesimonials/>
-          <Steps/>
+            <Testimonials/>
+            <Steps/>
           </div>
-          <Pricing/>
-          <Footer/>
+            <Pricing/>
+            <Footer/>
         </div>
       );
 }

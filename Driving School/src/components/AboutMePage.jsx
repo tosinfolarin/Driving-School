@@ -15,8 +15,8 @@ const FAQQs = () => {
           </div>
             <BookNow/>
           </div>
-          <AboutMe/>
-          <Footer/>
+            <AboutMe/>
+            <Footer/>
         </div>
       );
 }

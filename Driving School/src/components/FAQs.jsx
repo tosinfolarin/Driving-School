@@ -24,7 +24,7 @@ const FAQs = () => {
         });
         setDropdowns(updatedDropdowns);
     };
-
+ 
     return (
         
         <div className ="dropdown-container">

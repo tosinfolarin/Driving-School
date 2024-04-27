@@ -26,12 +26,11 @@ function SearchBar(props) {
   return (
     <form className="inputwithbutton">
       <div>
-        <h1 className="Instructor Search">Search in Your Area</h1>
+        <h1 className="Instructor Search">Search Schools in Your Area</h1>
       </div>
       <div>
       <Input type="text" 
       value="Driving Schools"
-      // onChange={(e) => setTerm(e.target.value)}
       placeholder="Driving Schools"
       readOnly />
       

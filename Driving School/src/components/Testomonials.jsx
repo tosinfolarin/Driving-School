@@ -8,7 +8,7 @@
 //             </div>
 
 
-const Tesimonials = () => {
+const Testimonials = () => {
     return ( 
         <div className= "all-testimonials">
         <div className ="testimonials" role="list">
@@ -72,4 +72,4 @@ const Tesimonials = () => {
      );
 }
  
-export default Tesimonials;
+export default Testimonials;
