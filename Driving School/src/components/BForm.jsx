@@ -18,9 +18,21 @@ const BForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm({ resolver: zodResolver(schema) });
 
   const submitData = (data) => {
-    console.log(data);
+    const formData = {
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email,
+        age: data.age,
+        postCode: data.postCode,
+        contactNumber: data.contactNumber,
+        weekDay: data.weekDay,
+        bestContactTime: data.bestContactTime,
+        lessonType: data.lessonType,
+        lessonPackage: data.lessonPackage,
+    };
+    console.log(formData);
     setSubmitted(true);
-  };
+};
 
   if (submitted) {
     return (

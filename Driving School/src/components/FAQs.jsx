@@ -26,32 +26,32 @@ const FAQs = () => {
     };
  
     return (
-        
-        <div className ="dropdown-container">
+        <div className="dropdown-container" role="region" aria-label="Frequently Asked Questions">
             <h1 className="FAQs">Frequently Asked Questions</h1>
             {dropdowns.map((dropdown, index) => (
-                
                 <li className="dropdown-item" key={index}>
-                    <button className="dropbtn" onClick={() => toggleDropdown(index)}>
+                    <button
+                        className="dropbtn"
+                        onClick={() => toggleDropdown(index)}
+                        aria-expanded={dropdown.isOpen ? 'true' : 'false'}
+                        aria-controls={`dropdown-content-${index}`}
+                    >
                         <h3>{dropdown.question}</h3>
                         <div className="downarrow">
                             <img src="src/images/downarrow.svg" alt="Arrow" />
                         </div>
                     </button>
-                        
-                    <div className={`dropdown-content ${dropdown.isOpen ? 'show' : ''}`}>
-                        <p>
-                            {dropdown.answer}
-                        </p>
+                    <div
+                        id={`dropdown-content-${index}`}
+                        className={`dropdown-content ${dropdown.isOpen ? 'show' : ''}`}
+                        aria-hidden={!dropdown.isOpen}
+                    >
+                        <p>{dropdown.answer}</p>
                     </div>
                 </li>
-                
             ))}
         </div>
-        
     );
-   
-}
-
+};
 
 export default FAQs;

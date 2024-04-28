@@ -14,7 +14,9 @@ const GoogleSearchResults = () => {
         if (mapElement) {
             map = new window.google.maps.Map(mapElement, {
                 center: defaultLocation,
-                zoom: 12
+                zoom: 12,
+                role: 'application', // ARIA role
+                'aria-label': 'Map showing driving schools',
             });
 
             placesService = new window.google.maps.places.PlacesService(map);
@@ -51,9 +53,11 @@ const GoogleSearchResults = () => {
                             );
 
                             var infoWindow = new window.google.maps.InfoWindow({
-                                content: '<strong>' + place.name + '</strong><br>' +
-                                    'Rating: ' + place.rating + ratingComponentString + 
-                                    'Address: ' + (place.vicinity || 'N/A')
+                                content: '<strong>' + place.name + '</strong><br>' + 
+                                'Rating: ' + place.rating + ratingComponentString + 
+                                'Address: ' + (place.vicinity || 'N/A'),
+                                role: 'tooltip', // ARIA role
+                                'aria-label': 'Information about ' + place.name, // ARIA label
                             });
 
                             marker.addListener('click', function () {
@@ -61,6 +65,7 @@ const GoogleSearchResults = () => {
                             });
 
                             var listItem = document.createElement('li');
+                            listItem.setAttribute('role', 'listitem'); // ARIA role
                             listItem.innerHTML = '<div class="business-info">' + '<strong>' + place.name + '</strong><br>' +
                                 'Rating: ' + place.rating + ratingComponentString + 
                                 'Address: ' + (place.vicinity || 'N/A');
@@ -85,7 +90,7 @@ const GoogleSearchResults = () => {
         document.head.appendChild(googleMapsScript);
 
         return () => {
-            // Clean up logic
+            
         };
     }, []);
 

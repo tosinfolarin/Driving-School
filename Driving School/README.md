@@ -41,7 +41,7 @@ Hook form resolver
 for star:
 https://github.com/smastrom/react-rating
 
-If a user decides that they want to book an appointment with Trinity Driving School, they have the option to fill in a form which would be submitted to the database. This currently goes to the console as there is no current database. This can later be installed using firebase.
+If a user decides that they want to book an appointment with Trinity Driving School, they have the option to fill in a form which would be submitted to the database. This currently goes to the console as there is no current database. This can later be installed using firebase and will not be shared without informed consent. Informed consent has already been received concerning the images used on this website.
 
 This website is currently being hosted on.. Please find the link below:
 

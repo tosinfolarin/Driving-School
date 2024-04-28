@@ -32,47 +32,38 @@ const ShowMeTellMe = () => {
             };
 
 
-
-    return (
-        <div className ="show-questions">
-        <div>
-
+return (
+    <div className="show-questions" role="region" aria-label="Show Me Tell Me Questions">
         <div className="flex-test">
+            <div className="flex-one testVid">
+                <iframe width="650" height="365" src="https://www.youtube.com/embed/uh8slnP76-w" title="'Show me, tell me': tell me questions 2024: official DVSA guide" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <h1 className="showme-header"> 'Show Me' Questions </h1>
+                <p>
+                When it’s safe to do so, can you show me how you wash and clean the rear windscreen? <br /><br />
+                When it’s safe to do so, can you show me how you wash and clean the front windscreen?<br/> <br />
+                When it’s safe to do so, can you show me how you’d switch on your dipped headlights? <br /><br />
+                When it’s safe to do so, can you show me how you’d set the rear demister?<br /><br />
+                When it’s safe to do so, can you show me how you’d operate the horn?<br /><br />
+                When it’s safe to do so, can you show me how you’d demist the front windscreen?<br /><br />
+                When it’s safe to do so, can you show me how you’d open and close the side window?
+                </p>
+                <div>
+                    <Quiz />
+                </div>
+            </div>
 
-        <div className="flex-one testVid">
-        <iframe width="650" height="365" src="https://www.youtube.com/embed/uh8slnP76-w" title="&#39;Show me, tell me&#39;: tell me questions 2024: official DVSA guide" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-        <h1 className="showme-header"> 'Show Me' Questions </h1>
-        <p>
-            When it’s safe to do so, can you show me how you wash and clean the rear windscreen? <br /><br />
-            When it’s safe to do so, can you show me how you wash and clean the front windscreen?<br/> <br />
-            When it’s safe to do so, can you show me how you’d switch on your dipped headlights? <br /><br />
-            When it’s safe to do so, can you show me how you’d set the rear demister?<br /><br />
-            When it’s safe to do so, can you show me how you’d operate the horn?<br /><br />
-            When it’s safe to do so, can you show me how you’d demist the front windscreen?<br /><br />
-            When it’s safe to do so, can you show me how you’d open and close the side window?
-        </p>
-
-        <div>
-            <Quiz/>
-        </div>
-        </div>
-        
-
-        <div className="flex-child testText">
-            
+            <div className="flex-child testText">
                 <div>
                     <h1 className="tellme-header"> 'Tell Me' Questions</h1>
                     {dropdowns.map((dropdown, index) => (
                         <li className="t-dropdown-item" key={index}>
-                            <button className="t-dropbtn" onClick={() => toggleDropdown(index)}>
+                            <button className="t-dropbtn" onClick={() => toggleDropdown(index)} aria-expanded={dropdown.isOpen ? 'true' : 'false'}>
                                 <h3>{dropdown.question}</h3>
                                 <div className="t-downarrow">
                                     <img src="src/images/downarrow.svg" alt="Arrow" />
                                 </div>
                             </button>
-                                
-                            <div className={`t-dropdown-content ${dropdown.isOpen ? 'show' : ''}`}>
+                            <div className={`t-dropdown-content ${dropdown.isOpen ? 'show' : ''}`} aria-hidden={!dropdown.isOpen}>
                                 <p>
                                     {dropdown.answer}
                                 </p>
@@ -80,15 +71,10 @@ const ShowMeTellMe = () => {
                         </li>
                     ))}
                 </div>
-                    </div>
-                    
-                    </div>
-                    
-                    </div>
-                    </div>
-                );
-
-
+            </div>
+        </div>
+    </div>
+);
 }
- 
+
 export default ShowMeTellMe;
