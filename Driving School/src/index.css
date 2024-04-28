@@ -1130,3 +1130,12 @@ strong {
   text-decoration: none; /* Remove default underline */
   
 }
+
+.business-info {
+  padding: 10px; /* Adjust the padding value as needed */
+}
+
+
+.business-info p {
+  margin: 5px 0; /* Adjusts the top and bottom margin of reviews in business-info */
+}

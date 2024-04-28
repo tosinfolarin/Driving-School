@@ -61,7 +61,7 @@ const GoogleSearchResults = () => {
                             });
 
                             var listItem = document.createElement('li');
-                            listItem.innerHTML = '<strong>' + place.name + '</strong><br>' +
+                            listItem.innerHTML = '<div class="business-info">' + '<strong>' + place.name + '</strong><br>' +
                                 'Rating: ' + place.rating + ratingComponentString + 
                                 'Address: ' + (place.vicinity || 'N/A');
 
