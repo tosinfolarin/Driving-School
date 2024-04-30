@@ -45,6 +45,8 @@ This web application uses a number of libraries including:
 - React-aria-components
 - Bulma css library
 - Font-awesome icons
+
+
 For the form creation, I used: https://www.youtube.com/watch?v=dldjCPa9ZW4 as inspiration. This allowed for the use of further libraries. Including:
 - Zod
 - React Hook Form
