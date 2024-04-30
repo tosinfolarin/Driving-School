@@ -92,49 +92,27 @@ strong {
 }
 
 
-/* Media query for smaller screens */
+/* Media query for Phones */
 @media only screen and (max-width: 768px) {
   .navbar .links {
     flex-direction: column;
-    right: 50px;
+    right: 0px;
     margin-bottom: 10px;
   }
   
   .BusinessName {
     margin-bottom: 10px;
+    bottom: 10px;
     
   }
 
-
   .LPlate {
     margin-bottom: 10px;
-    flex-direction: column;
-    top: 30px;
+    top: 160px;
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  .navbar .links{
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-
-.slogan{
-  position: relative;
-  font-size: 25px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-weight:500;
-  font-style: italic;
-  
-}
-
-
-
-/* For Smaller Screens*/
+/* For smaller screens*/
 
 @media screen and (max-width: 768px) {
   .LPlate {
@@ -143,8 +121,9 @@ strong {
   }
 
   .BusinessName {
-    font-size: 10px; 
-    left: 35%; 
+    font-size: 12px; 
+    left: 38%;
+    bottom: 25px;
   }
 
   .logo-container {
@@ -165,10 +144,27 @@ strong {
 }
 
 
+/* For smaller screens */
+@media (min-width: 768px) and (max-width: 992px){
+  .navbar .links{
+    flex-direction: row;
+    right: auto;
+  }
+}
 
 
 
 
+
+.slogan{
+  position: relative;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight:500;
+  font-style: italic;
+  
+}
 
 
 
@@ -200,6 +196,23 @@ strong {
   height: auto;
   margin-bottom: -2.7%;
   
+}
+
+@media screen and (max-width: 768px) {
+  .book-now-text {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+    top: 94px;
+  }
+
+  .car-book-image {
+    width: 40%;
+    height: auto;
+    top: 20px;
+    margin-bottom: -0.2%;
+    
+  }
+
+
 }
 
 
@@ -430,20 +443,23 @@ strong {
     flex-direction: column; /* Stack items vertically on small screens */
   }
   
+ 
   .flex-pchild {
-    margin-bottom: 20px; /* this is spacing between child elements */
-    width: 100%; /* this brings full width setting on child elements  */
+    flex: 1 1 100%; /* Flex items will take up 100% of the container width */
+    margin: 10px 0; /* Reduce margin for smaller screens */
   }
   
   .flex-pchild:first-child {
     margin-right: 0; /* Removes right margin for first child */
   }
+  
 }
 
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .Price-container {
     max-width: 600px;
+  
   }
 
   .Pricing h1 {
@@ -461,6 +477,9 @@ strong {
   .Pricing h1 {
     font-size: 32px;
   }
+
+  .flex-pchild {
+    flex: 1 1 100%; }
 }
 
 
@@ -736,18 +755,26 @@ strong {
   .showme-header,
   .tellme-header {
     text-align: center;
+    
   }
 
   .show-questions {
-    height: auto; 
+    height: auto;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Add auto margin to center horizontally */
+    
 
   }
 
+  
   .testVid,
   .testText {
     top: 10px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     
   }
 
@@ -762,9 +789,36 @@ strong {
   }
 
   .t-dropdown-container {
-    max-width: 70%; 
+    max-width: 70%;
+    margin: 0 auto;
+    
+  }
+
+  .t-dropbtn {
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Add auto margin to center horizontally */
 }
+
+
+  .t-dropdown-content {
+    max-width: 60%;
+    align-items: center;
+    margin: auto;
+  
 }
+  .t-dropdown-content.show {
+    max-width: 60%;
+    align-items: center;
+    margin: auto;
+    
+  }
+
+ 
+
+}
+
 
 
 
@@ -841,7 +895,7 @@ strong {
   }
   
   .dropdown-container {
-    padding: 0 10px; /* Add some padding to container */
+    padding: 0 10px; /* Adds some padding to container */
   }
   
   .dropdown-content {
@@ -887,8 +941,8 @@ strong {
 
 
 
+/*More Schools Page*/
 
-/* Search new instructors page*/
 
 .inputwithbutton{
   text-align: center;
@@ -905,7 +959,7 @@ strong {
 .inputwithbutton Button {
   width: 40px; 
   height: 40px;
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 20px; 
   border-radius: 8px;
   color: white;
   background-color: red;
@@ -915,11 +969,39 @@ strong {
   color: #ff0000;
   background-color: black;
   transition: 1s ease;
-  cursor: pointer; /* Show pointer cursor on hover */
+  cursor: pointer; /* Shows pointer cursor on hover */
 }
 
 
-/*More Schools Page*/
+
+@media screen and (min-width: 900px) {
+  .inputwithbutton .input-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the input group */
+    align-items: center; /* Vertically center the input group */
+    margin: 0 auto; /* Center the input group horizontally */
+  }
+
+  .input-group Input {
+    width: 200px; /* Restore width for larger screens */
+    margin-bottom: 0; /* Removes bottom margin */
+  }
+
+  .input-group Button {
+    width: auto; /* Restore auto width for larger screens */
+    margin-left: 10px; /* Add some space between input fields and button */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .map-container {
+    height: 600px; /* Reduce the height for smaller screens */
+    width: 200px; /* Reduce the width for smaller screens */
+    margin: 0 auto; /* Center the map container horizontally */
+  }
+}
+
+
 
 
 .map-container {
@@ -932,6 +1014,10 @@ strong {
   height: 300px;
   width: 600px;
 }
+
+
+
+
 
 .search-options {
   display: flex;
@@ -970,7 +1056,7 @@ strong {
 }
 
 .business-info {
-  padding: 10px; /* Adjust the padding value as needed */
+  padding: 10px; 
 }
 
 
