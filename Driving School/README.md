@@ -5,7 +5,16 @@
 Welcome to Trinity driving school, a driving school which offers theory support and practical support but also the opportunity to search for driving schools in the specified location of your choice. This is a website that will take you from little to no experience of driving to being confident enough in booking your theory exam and your practical exam. The website contains a page with testimonials from previous customers, information about the driving instructor and frequently asked questions related to learning how to drive. An exciting feature of the website is the Test Questions page which allows us users to practice their theory in preparation of their theory exam. 
 
 
-# RESOURCES USED
+# Steps
+
+- clone this project: git clone https://github.com/tosinfolarin/Driving-School.git
+- cd into the cloned directory
+- Install the required dependencies by entering 'npm install' in the terminal
+- enter the 'npm run dev' command in the terminal
+- Follow the link: http://localhost:5173/ to the browser to view the website
+
+
+# Resources Used
 
 
 
