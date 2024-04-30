@@ -200,7 +200,7 @@ strong {
 
 @media screen and (max-width: 768px) {
   .book-now-text {
-    font-size: 16px; /* Adjust the font size for smaller screens */
+    font-size: 16px; /* Adjusting the font size for smaller screens */
     top: 94px;
   }
 
@@ -214,17 +214,6 @@ strong {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -256,7 +245,7 @@ strong {
 .testimonials {
   display: flex;
   padding-top: 30px;
-  gap: 50px; /* Adds some spacing between items */
+  gap: 50px; /* Adds  spacing between items */
 }
 
 .testimonial-item {
@@ -440,17 +429,17 @@ strong {
 
 @media (max-width: 768px) {
   .flex-pcontainer {
-    flex-direction: column; /* Stack items vertically on small screens */
+    flex-direction: column; /* Stacks items vertically on the small screens */
   }
   
  
   .flex-pchild {
-    flex: 1 1 100%; /* Flex items will take up 100% of the container width */
-    margin: 10px 0; /* Reduce margin for smaller screens */
+    flex: 1 1 100%; /* The items will take up 100% of the container width */
+    margin: 10px 0; 
   }
   
   .flex-pchild:first-child {
-    margin-right: 0; /* Removes right margin for first child */
+    margin-right: 0; /* Removes right margin for first child of the container*/
   }
   
 }
@@ -513,11 +502,11 @@ strong {
   padding: 20px;
 }
 
-/* For screens smaller than 768px (typical tablets) */
+/* For smaller devices */
 @media (max-width: 768px) {
   .aboutme-page {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Centers items horizontally */
     
   }
   
@@ -529,7 +518,7 @@ strong {
   
   .instructor-image {
     width: 100%; /* Makes image fill its container */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintains aspect ratio */
   }
   
   .flex-c {
@@ -763,7 +752,7 @@ strong {
     max-width: 60%;
     display: flex;
     align-items: center;
-    margin: 0 auto; /* Add auto margin to center horizontally */
+    margin: 0 auto; /*centers horizontally*/
     
 
   }
@@ -798,7 +787,7 @@ strong {
     max-width: 60%;
     display: flex;
     align-items: center;
-    margin: 0 auto; /* Add auto margin to center horizontally */
+    margin: 0 auto; /* centers horizontally */
 }
 
 
@@ -888,7 +877,7 @@ strong {
 
 
 
-/* For screens smaller than 768px (typical tablets) */
+/* For smaller screens */
 @media (max-width: 768px) {
   .dropbtn {
     width: 100%; /* Makes button full width on smaller screens */
@@ -978,8 +967,8 @@ strong {
   .inputwithbutton .input-group {
     display: flex;
     justify-content: center; /* Horizontally center the input group */
-    align-items: center; /* Vertically center the input group */
-    margin: 0 auto; /* Center the input group horizontally */
+    align-items: center; /* Vertically centers the input group */
+    margin: 0 auto; /* Centers the input group horizontally */
   }
 
   .input-group Input {
@@ -995,9 +984,9 @@ strong {
 
 @media only screen and (max-width: 900px) {
   .map-container {
-    height: 600px; /* Reduce the height for smaller screens */
-    width: 200px; /* Reduce the width for smaller screens */
-    margin: 0 auto; /* Center the map container horizontally */
+    height: 600px; /* Reduces the height for smaller screens */
+    width: 200px; /* Reduces the width for smaller screens */
+    margin: 0 auto; /* Centers the map container horizontally */
   }
 }
 
@@ -1051,7 +1040,7 @@ strong {
 
 #placesList li {
   padding-bottom: 20px;
-  text-decoration: none; /* Remove default underline */
+  text-decoration: none; /* Removes the underline */
   
 }
 

@@ -1,13 +1,3 @@
-
-//         <div className ="testimonals">
-//            <div>
-//             <div className="student-img-container">
-//              <img src = 'https://placehold.co/400x400' alt='student picture' className="student-img" />
-//             </div>
-//              <p className = "testimonial-text"> I have tried a few other local driving schools but trinity is by far the best. I am pleased to say I was able to pass first time.</p>
-//             </div>
-
-
 const Testimonials = () => {
     return ( 
         <div className= "all-testimonials">
