@@ -1,16 +1,11 @@
 # Trinity Driving School
 
 
-**TRINITY DRIVING SCHOOL**
-
-
-
 
 Welcome to Trinity driving school, a driving school which offers theory support and practical support but also the opportunity to search for driving schools in the specified location of your choice. This is a website that will take you from little to no experience of driving to being confident enough in booking your theory exam and your practical exam. The website contains a page with testimonials from previous customers, information about the driving instructor and frequently asked questions related to learning how to drive. An exciting feature of the website is the Test Questions page which allows us users to practice their theory in preparation of their theory exam. 
 
 
-**RESOURCES USED**
-
+# RESOURCES USED
 
 
 
@@ -32,8 +27,8 @@ The GitHub Link for the code in the youtube tutorial is:
 https://github.com/productioncoder/yelp-frontend
 Following complications with the cors-anywhere proxy following implentation. I opted for the Google Places API to deliver the same results of revealing exercises.
 
-**Libraries**
 
+# Libraries
 
 
 This web application uses a number of libraries including:
@@ -61,7 +56,7 @@ This website is currently being hosted on.. Please find the link below:
 
 
 
-**Creator Information**
+# Creator Information
 
 
 Name: Theodore Osinfolarin
