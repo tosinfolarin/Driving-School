@@ -37,7 +37,7 @@ For the form creation, I used: https://www.youtube.com/watch?v=dldjCPa9ZW4 as in
 Zod, React hook form and Hook form resolver.
 
 for star ratings, this came from: 
-https://github.com/smastrom/react-rating
+https://dreyescat.github.io/react-rating/
 
 If a user decides that they want to book an appointment with Trinity Driving School, they have the option to fill in a form which would be submitted to the database. This currently goes to the console as there is no current database. This can later be stored in a in a database. Each individuals information will not be shared without informed consent. Informed consent has already been received concerning the images used on this website.
 

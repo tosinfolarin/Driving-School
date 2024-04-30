@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Footer from "./Footer";
-import GoogleSearchResults from "./googleMapsApi/googleresults";
+import GoogleSearchResults from "./googleMapsApi/Googleresults";
 
 
 const MSchools = (props) => {
