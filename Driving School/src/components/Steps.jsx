@@ -1,6 +1,6 @@
 const Steps = () => {
     return ( 
-    
+        
     <div className ="Steps-container">
         <h1>
         1.	Apply for Provisional License: Before learning, it is important to have a provisional licence. This can be obtained through <a href ="https://www.gov.uk/apply-first-provisional-driving-licence" target="_blank">The Official Government Website.  </a>
