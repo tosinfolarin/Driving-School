@@ -33,7 +33,7 @@ const Testimonials = () => {
 
             <div className="testimonial-item" role="listitem" aria-labelledby="testimonial3">
                 <div className="student-img-container">
-                <img src={ipassed.jpeg} alt='student picture' className="student-img"/>
+                <img src={ipassed} alt='student picture' className="student-img"/>
                 {/* 'src/images/ipassed.jpeg'  */}
                 </div>
                 <div className="testimonial-text-container">

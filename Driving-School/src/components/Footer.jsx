@@ -13,7 +13,7 @@ const Footer = () => {
                 <img src={emaillogo} alt="Email Logo" className="EmailLogo" aria-hidden="true" />
                 {/* "src/images/emaillogo.webp" */}
                 <span aria-label="Email">Email:</span> osinfolt@roehampton.ac.uk  &nbsp; &nbsp;
-                <img src={Instagramlogo.webp} alt="Instagram Logo" className="InstagramLogo" aria-hidden="true" />
+                <img src={Instagramlogo} alt="Instagram Logo" className="InstagramLogo" aria-hidden="true" />
                 {/* "src/images/Instagramlogo.webp" */}
                 <span aria-label="Instagram">Instagram:</span> @TrinityDrivingSchool &nbsp; &nbsp;
             </h1>
