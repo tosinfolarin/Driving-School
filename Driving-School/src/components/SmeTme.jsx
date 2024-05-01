@@ -16,7 +16,7 @@ const ShowMeTellMe = () => {
                 { isOpen: false, question: "10. Tell me how you’d switch on the rear fog light(s) and explain when you’d use it/them. You don’t need to exit the vehicle.", answer: "Operate switch (turn on dipped headlights and ignition if necessary). Check warning light is on. Explain use." },
                 { isOpen: false, question: "11. Tell me how you switch your headlight from dipped to main beam and explain how you’d know the main beam is on", answer: "Operate switch (with ignition or engine on if necessary), check with main beam warning light." },
                 { isOpen: false, question: "12. Open the bonnet and tell me how you’d check that the engine has sufficient oil.", answer: "Identify dipstick/oil level indicator, describe check of oil level against the minimum and maximum markers." },
-                { isOpen: false, question: "13. Open the bonnet and tell me how you’d check that the engine has sufficient engine coolant. You don’t need to exit the vehicle.", answer: "dentify high and low level markings on header tank where fitted or radiator filler cap, and describe how to top up to correct level." },
+                { isOpen: false, question: "13. Open the bonnet and tell me how you’d check that the engine has sufficient engine coolant. You don’t need to exit the vehicle.", answer: "Identify high and low level markings on header tank where fitted or radiator filler cap, and describe how to top up to correct level." },
                 { isOpen: false, question: "14. Open the bonnet and tell me how you’d check that you have a safe level of hydraulic brake fluid.", answer:"Identify reservoir, check level against high and low markings." },
             ];
 
