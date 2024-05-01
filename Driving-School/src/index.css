@@ -720,6 +720,7 @@ strong {
   text-align: center;
   justify-content: center;
   
+  
 }
 
 .t-downarrow {
@@ -744,7 +745,7 @@ strong {
   }
 
   .tellme-header {
-    margin-left: 90px;
+    margin-left: 100px;
   }
 
   .show-questions {
@@ -812,7 +813,7 @@ strong {
   .t-dropdown-content.show {
     max-width: 70%;
     align-items: center;
-    margin: auto;
+    
     
   }
 
@@ -1170,6 +1171,5 @@ strong {
   height: auto;
   mix-blend-mode: multiply;
 }
-
 
 
