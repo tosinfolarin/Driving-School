@@ -736,40 +736,47 @@ strong {
 
 
 
-
-
-
 /* For screens up to 900px */
 @media only screen and (max-width: 900px)  {
   .showme-header,
   .tellme-header {
     text-align: center;
-    
+    margin-left: 10%;
   }
 
   .show-questions {
     height: auto;
-    max-width: 60%;
+    max-width: 70%;
     display: flex;
     align-items: center;
     margin: 0 auto; /*centers horizontally*/
-    
+  }
+
+  .gov-video {
+    max-width: 95%;
+    margin-left: 10%;
 
   }
 
-  
+  .showMeQuestions {
+    margin-left: 10%;
+    max-width: 90%;
+
+  }
+ 
   .testVid,
   .testText {
     top: 10px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    max-width: 80%;
     
   }
 
+
   .t-container {
-    width: 70%; 
-    padding: 20px 30px; 
+    width: 90%; 
   }
 
  
@@ -784,7 +791,7 @@ strong {
   }
 
   .t-dropbtn {
-    max-width: 60%;
+    max-width: 70%;
     display: flex;
     align-items: center;
     margin: 0 auto; /* centers horizontally */
@@ -792,13 +799,13 @@ strong {
 
 
   .t-dropdown-content {
-    max-width: 60%;
+    max-width: 70%;
     align-items: center;
     margin: auto;
   
 }
   .t-dropdown-content.show {
-    max-width: 60%;
+    max-width: 70%;
     align-items: center;
     margin: auto;
     
@@ -966,7 +973,7 @@ strong {
 @media screen and (min-width: 900px) {
   .inputwithbutton .input-group {
     display: flex;
-    justify-content: center; /* Horizontally center the input group */
+    justify-content: center; /* Horizontally centers the input group */
     align-items: center; /* Vertically centers the input group */
     margin: 0 auto; /* Centers the input group horizontally */
   }
@@ -1052,6 +1059,9 @@ strong {
 .business-info p {
   margin: 5px 0; /* Adjusts the top and bottom margin of reviews in business-info */
 }
+
+
+
 /* BOOKING PAGE */
 
 .BForm {
