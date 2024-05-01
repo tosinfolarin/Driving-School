@@ -1,4 +1,4 @@
-
+import downarrow from "@/images/downarrow.svg";
 import {useState} from "react";
 
 const FAQs = () => {
@@ -38,7 +38,8 @@ const FAQs = () => {
                     >
                         <h3>{dropdown.question}</h3>
                         <div className="downarrow">
-                            <img src="src/images/downarrow.svg" alt="Arrow" />
+                            <img src={downarrow} alt="Arrow" />
+                            {/* "src/images/downarrow.svg"  */}
                         </div>
                     </button>
                     <div

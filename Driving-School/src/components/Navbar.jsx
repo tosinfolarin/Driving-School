@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import Lplate from "@/images/Lplate.png"
+
+
 
 const Navbar = () => {
     return (  
@@ -6,7 +9,8 @@ const Navbar = () => {
            
                 <div className="logo-container">
              <Link to="/">
-                <img src='/src/images/Lplate.png' alt="Learner Symbol" className="LPlate" />
+                <img src={Lplate.png} alt="Learner Symbol" className="LPlate" />
+                {/* '/src/images/Lplate.png' */}
            
                 <div className= "BusinessName">
                     <h1>Trinity</h1>

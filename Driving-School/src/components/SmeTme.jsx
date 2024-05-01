@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Quiz from "./Quiz";
+import downarrow from "@/images/downarrow.svg"
 
 const ShowMeTellMe = () => {
     const iDropdowns = [
@@ -60,7 +61,8 @@ return (
                             <button className="t-dropbtn" onClick={() => toggleDropdown(index)} aria-expanded={dropdown.isOpen ? 'true' : 'false'}>
                                 <h3>{dropdown.question}</h3>
                                 <div className="t-downarrow">
-                                    <img src="src/images/downarrow.svg" alt="Arrow" />
+                                    <img src={downarrow} alt="Arrow" />
+                                    {/* "src/images/downarrow.svg" */}
                                 </div>
                             </button>
                             <div className={`t-dropdown-content ${dropdown.isOpen ? 'show' : ''}`} aria-hidden={!dropdown.isOpen}>

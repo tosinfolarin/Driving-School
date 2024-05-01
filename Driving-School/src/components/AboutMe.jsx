@@ -1,9 +1,13 @@
+import instructorPic from "@/images/instructorPic.png"
+
+
 const AboutMe = () => {
     return ( 
     
       <div className="aboutme-page">
       <div className="pic-box">
-          <img src="src/images/instructorPic.png"  alt="instructor's picture" className="instructor-image" />
+          <img src={instructorPic}  alt="instructor's picture" className="instructor-image" />
+          {/* "src/images/instructorPic.png" */}
       </div>
       <div className="flex-c aboutme" role="region" aria-label="About Me">
 
@@ -31,7 +35,7 @@ const AboutMe = () => {
    );
 }
  
-        
-"src/images/instructorPic.png" 
+    
+
 export default AboutMe;
 
