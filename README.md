@@ -63,7 +63,10 @@ If a user decides that they want to book an appointment with Trinity Driving Sch
 
 
 
-This website is currently being hosted on.. Please find the link below:
+This website is currently being hosted on netlify. Please find the link below:
+
+https://trinitydrivingschool.netlify.app
+
 
 
 
