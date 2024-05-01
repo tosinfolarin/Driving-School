@@ -84,7 +84,7 @@ const GoogleSearchResults = () => {
 
     useEffect(() => {
         const googleMapsScript = document.createElement('script');
-        googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_APIKEY}&libraries=places`;
+        googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAJPiZQZp8QmtyMIG7fkzQqzy04VfIFNpA&libraries=places`;
         googleMapsScript.async = true;
         googleMapsScript.onload = initMap;
         document.head.appendChild(googleMapsScript);
