@@ -1,0 +1,1165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+  background: #ecebeb;
+  
+} 
+
+* {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.LPlate {
+  width: 15%;
+  height: auto;
+  transform: rotate(-35deg);
+  margin-right: 5%;
+  position: relative;
+  top:100px;
+  left: 33%;
+  margin-bottom: -40px;
+}
+
+.BusinessName{
+  position: relative;
+  bottom: -30px;
+  left: 60%;
+}
+
+.logo-container {
+  position: relative;
+  right: 10%;
+  top: -40px;
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  max-width: 85%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ff0000;
+  
+}
+.navbar h1 {
+  color: #ff0000;
+  margin-right: auto;
+  
+}
+.navbar .links {
+  margin-left: auto;
+  position: relative;
+  right: 150px;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #ff0606;
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  color: #000000;
+  margin-right: 10px;
+}
+
+.links a:last-child {
+  background-color: #000000;
+  color:#fafafa;
+  padding: 6px 18px;
+  border-radius: 8px;
+  
+}
+
+.links a:last-child:hover {
+  background-color: #ff0000;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: 0.6s;
+}
+
+
+/* Media query for Phones */
+@media only screen and (max-width: 768px) {
+  .navbar .links {
+    flex-direction: column;
+    right: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .BusinessName {
+    margin-bottom: 10px;
+    bottom: 10px;
+    
+  }
+
+  .LPlate {
+    margin-bottom: 10px;
+    top: 160px;
+  }
+}
+
+/* For smaller screens*/
+
+@media screen and (max-width: 768px) {
+  .LPlate {
+    width: 30%;
+    flex-direction: column;
+  }
+
+  .BusinessName {
+    font-size: 12px; 
+    left: 38%;
+    bottom: 25px;
+  }
+
+  .logo-container {
+    right: 5%; 
+  }
+
+  .navbar h1 {
+    margin-right: auto; 
+  }
+
+  .navbar .links {
+    margin-left: auto;
+  }
+
+  .links a:last-child {
+    padding: 6px 12px; 
+  }
+}
+
+
+/* For smaller screens */
+@media (min-width: 768px) and (max-width: 992px){
+  .navbar .links{
+    flex-direction: row;
+    right: auto;
+  }
+}
+
+
+
+
+
+.slogan{
+  position: relative;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight:500;
+  font-style: italic;
+  
+}
+
+
+
+
+.book-now-text:hover{
+  color:rgb(255, 0, 0);
+}
+
+
+.booking-container {
+  position: relative;
+  text-align: center;
+  margin-top: -3%;
+}
+
+.book-now-text {
+  position: absolute;
+  top: 68%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 1.8vw;
+  z-index: 1; /* Sets a higher z-index for the text */
+  text-decoration: none;
+}
+
+
+.car-book-image {
+  width: 20%;
+  height: auto;
+  margin-bottom: -2.7%;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .book-now-text {
+    font-size: 16px; /* Adjusting the font size for smaller screens */
+    top: 94px;
+  }
+
+  .car-book-image {
+    width: 40%;
+    height: auto;
+    top: 20px;
+    margin-bottom: -0.2%;
+    
+  }
+
+
+}
+
+
+
+
+/*Homepage styling */
+
+.trinity-info-holder {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center; 
+}
+
+.trinity-info {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+.all-testimonials {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto; 
+  max-width: 1200px; 
+}
+
+.testimonials {
+  display: flex;
+  padding-top: 30px;
+  gap: 50px; /* Adds  spacing between items */
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+.student-img-container {
+  text-align: center;
+}
+
+.student-img {
+  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid transparent; /* Transparent border */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text-container {
+  width: 100%;
+}
+
+.testimonial-text {
+  text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .all-testimonials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+  }
+
+  .testimonial-item {
+    width: 80%;
+  }
+
+  .student-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .testimonials {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .testimonial-item {
+    width: 45%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .all-testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .testimonials {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .testimonial-item {
+    width: 350px;
+  }
+}
+
+
+
+
+
+
+
+
+.Steps-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.Steps-container h1 {
+  text-align: center; 
+  font-size: 18px;
+  border: 2px solid rgb(142, 1, 1);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+
+.road-image {
+  width: auto; 
+  max-width: 70px;
+  max-height: 90px; 
+  opacity: 0.3; 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+/* PRICING STYLING */
+
+.Price-container {
+  border: 4px solid #ff0000; 
+  border-radius: 10px; 
+  padding: 20px; 
+  max-width: 800px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.Pricing {
+  text-align: center;
+  padding-top: 10px;
+  
+}
+.Pricing h1{
+  text-align: center;
+  padding-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+
+.outer-pcontainer {
+  display: flex;
+  justify-content: center; 
+  
+}
+
+.flex-pcontainer {
+  display: flex;
+  max-width: 1200px;
+  
+}
+
+.flex-pchild {
+  flex: 1;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px
+  
+}  
+
+.flex-pchild:first-child {
+  margin-right: 20px;
+} 
+
+.p-heading{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .flex-pcontainer {
+    flex-direction: column; /* Stacks items vertically on the small screens */
+  }
+  
+ 
+  .flex-pchild {
+    flex: 1 1 100%; /* The items will take up 100% of the container width */
+    margin: 10px 0; 
+  }
+  
+  .flex-pchild:first-child {
+    margin-right: 0; /* Removes right margin for first child of the container*/
+  }
+  
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .Price-container {
+    max-width: 600px;
+  
+  }
+
+  .Pricing h1 {
+    font-size: 28px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .Price-container {
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .Pricing h1 {
+    font-size: 32px;
+  }
+
+  .flex-pchild {
+    flex: 1 1 100%; }
+}
+
+
+
+
+
+
+/*About Me*/
+
+.aboutme-page {
+  display: flex;
+}
+
+.pic-box {
+  flex: 0 1 30%; /* Adjust flex properties as needed */
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+}
+
+.instructor-image {
+  height: 250px;
+  width: 250px;}
+
+
+.flex-c {
+  flex: 1;
+  border: 2px solid rgb(255, 0, 0);
+  margin-left: 20px;
+  padding: 20px;
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+  .aboutme-page {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Centers items horizontally */
+    
+  }
+  
+  .pic-box {
+    flex: none; /* Resets flex */
+    width: 100%; /* Makes the image box the full width of the screen */
+    margin-bottom: 20px; /* Adds spacing between the image and the text */
+  }
+  
+  .instructor-image {
+    width: 100%; /* Makes image fill its container */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .flex-c {
+    flex: none; /* Resets flex to default behavior */
+    width: 100%; /* Make the text box full width */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .pic-box {
+    flex: 0 1 40%;
+    
+  }
+
+  .flex-c {
+    flex: 1;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .pic-box {
+    flex: 0 1 40%;
+  }
+
+  .flex-c {
+    flex: 1;
+    margin-left: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .pic-box {
+    flex: 0 1 30%;
+  }
+
+  .flex-c {
+    flex: 1;
+    margin-left: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* TEST QUESTIONS PAGE */
+
+.showme-header,
+.tellme-header{
+  text-align: center;
+}
+
+.show-questions{
+   display: flex;
+   justify-content: center; /* centers content */
+   text-align: center;
+   align-items: center; /* centers content */
+   height: 180vh; /* full viewport height */
+}
+
+
+.flex-test {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.flex-one {
+  flex: 1;
+  max-width: 100%;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+
+.testVid {
+  border: none;
+  position: relative;
+  width: 100%;
+  top: 95px;
+
+}
+.testText {
+  border: none;
+  position: relative;
+  top: 10px;
+
+} 
+
+
+.t-container{
+  width: 70%;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #ecebeb;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 40px 50px;
+  
+}
+
+.t-container hr{
+  height: 2px;
+  border: none;
+  background: grey;
+}
+
+.t-container h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.t-container ul li{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.t-container button{
+  margin: auto;
+  width: 40%;
+  height: 50px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+}
+
+.t-container button:hover{
+  width: 50%;
+  background-color: red;
+  transition: 1s;
+}
+
+.correct{
+  background: rgb(46, 255, 46);
+}
+
+.incorrect{
+  background: rgb(255, 110, 110);
+} 
+
+
+
+
+
+.t-dropbtn {
+  background-color:  rgb(255, 0, 0);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 600px;
+}
+
+.t-dropdown-item {
+  list-style-type: none;
+  text-align: center;
+}
+
+.t-dropdown-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.t-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #ffffffea;
+  padding: 2px;
+  max-width: 598px;
+  text-align: center;
+  transition: max-height 1s ease;
+}
+
+.t-dropdown-content.show {
+  max-height: 100px;
+  max-width: 598px;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.t-downarrow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.t-downarrow img {
+  max-width: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* For screens up to 900px */
+@media only screen and (max-width: 900px)  {
+  .showme-header,
+  .tellme-header {
+    text-align: center;
+    
+  }
+
+  .show-questions {
+    height: auto;
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /*centers horizontally*/
+    
+
+  }
+
+  
+  .testVid,
+  .testText {
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+
+  .t-container {
+    width: 70%; 
+    padding: 20px 30px; 
+  }
+
+ 
+  .t-container button {
+    width: 70%; 
+  }
+
+  .t-dropdown-container {
+    max-width: 70%;
+    margin: 0 auto;
+    
+  }
+
+  .t-dropbtn {
+    max-width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* centers horizontally */
+}
+
+
+  .t-dropdown-content {
+    max-width: 60%;
+    align-items: center;
+    margin: auto;
+  
+}
+  .t-dropdown-content.show {
+    max-width: 60%;
+    align-items: center;
+    margin: auto;
+    
+  }
+
+ 
+
+}
+
+
+
+
+
+
+
+/* FAQs Page Styling */
+
+.FAQs {
+  color: black;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.dropbtn {
+  background-color:  rgb(255, 0, 0);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 600px;
+}
+
+.dropdown-item {
+  list-style-type: none;
+  text-align: center;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: #ffffffea;
+  padding: 2px;
+  max-width: 598px;
+  text-align: center;
+  transition: max-height 1s ease;
+}
+
+.dropdown-content.show {
+  max-height: 100px;
+  max-width: 598px;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.downarrow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.downarrow img {
+  max-width: 10px;
+  margin-right: 10px;
+}
+
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .dropbtn {
+    width: 100%; /* Makes button full width on smaller screens */
+  }
+  
+  .dropdown-container {
+    padding: 0 10px; /* Adds some padding to container */
+  }
+  
+  .dropdown-content {
+    max-width: calc(100% - 20px); 
+  }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .dropbtn {
+    width: 80%; 
+  }
+
+  .dropdown-container {
+    max-width: 80%; 
+  }
+
+  .dropdown-content {
+    max-width: 80%; 
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .FAQs {
+    text-align: center;
+  }
+
+  .dropbtn {
+    width: 600px; 
+  }
+
+  .dropdown-container {
+    max-width: 800px; 
+    margin: 0 auto; /* Centers container horizontally */
+  }
+
+  .dropdown-content {
+    max-width: 598px; 
+  }
+}
+
+
+
+
+/*More Schools Page*/
+
+
+.inputwithbutton{
+  text-align: center;
+}
+
+.inputwithbutton Input {
+  width: 200px; 
+  height: 20px; 
+  padding: 10px; 
+  font-size: 18px; 
+  margin-right: 10px; 
+}
+
+.inputwithbutton Button {
+  width: 40px; 
+  height: 40px;
+  font-size: 20px; 
+  border-radius: 8px;
+  color: white;
+  background-color: red;
+}
+
+.inputwithbutton Button:hover {
+  color: #ff0000;
+  background-color: black;
+  transition: 1s ease;
+  cursor: pointer; /* Shows pointer cursor on hover */
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .inputwithbutton .input-group {
+    display: flex;
+    justify-content: center; /* Horizontally center the input group */
+    align-items: center; /* Vertically centers the input group */
+    margin: 0 auto; /* Centers the input group horizontally */
+  }
+
+  .input-group Input {
+    width: 200px; /* Restore width for larger screens */
+    margin-bottom: 0; /* Removes bottom margin */
+  }
+
+  .input-group Button {
+    width: auto; /* Restore auto width for larger screens */
+    margin-left: 10px; /* Add some space between input fields and button */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .map-container {
+    height: 600px; /* Reduces the height for smaller screens */
+    width: 200px; /* Reduces the width for smaller screens */
+    margin: 0 auto; /* Centers the map container horizontally */
+  }
+}
+
+
+
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  height: 300px;
+  width: 600px;
+}
+
+
+
+
+
+.search-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-options input,
+.search-options select {
+  margin-bottom: 5px;
+}
+
+.schools-info-list {
+  width: 100%;
+  overflow-y: scroll;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-width: 3px;
+
+  
+}
+
+#placesList {
+  list-style-type: none;
+  font-size: larger;
+  padding: 20px;
+  
+}
+
+#placesList li {
+  padding-bottom: 20px;
+  text-decoration: none; /* Removes the underline */
+  
+}
+
+.business-info {
+  padding: 10px; 
+}
+
+
+.business-info p {
+  margin: 5px 0; /* Adjusts the top and bottom margin of reviews in business-info */
+}
+/* BOOKING PAGE */
+
+.BForm {
+  background-color: #ffadad;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: center; 
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.BForm h1 {
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+
+  
+}
+
+.BForm input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.BForm label {
+  display: inline-block;
+  margin-right: 10px; /* Adjusts spacing between labels */
+  margin-top: 3px;
+}
+
+.BForm input[type="text"],
+.BForm input[type="number"],
+.BForm input[type="email"] {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.BForm input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  margin-top: 5%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.BForm input[type="submit"]:hover {
+  transition: 1s;
+  background-color: #ff0000;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}
+
+.thank-you-message {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* FOOTER */
+
+.Footer {
+  position: absolute;
+  font-size: 10px;
+  width: 100%;
+  background-color: #ce3f3f; 
+  color: #ffffff; 
+  margin-top: 150px;
+  padding: 10px; 
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.WhatsappLogo {
+  position: relative;
+  top: 3px;
+  width: 20px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.EmailLogo {
+  width: 20px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.InstagramLogo {
+  position: relative;
+  top: 3px;
+  width: 20px;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+
+
