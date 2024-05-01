@@ -1,4 +1,4 @@
-import Road from "@images/Road.jpg"
+import Road from "@/images/Road.jpg"
 
 const Steps = () => {
     return ( 
