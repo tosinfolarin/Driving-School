@@ -1,10 +1,12 @@
+import PassingPic2 from 'src/images/PassingPic2.png'
+
 const Testimonials = () => {
     return ( 
         <div className= "all-testimonials">
         <div className ="testimonials" role="list">
             <div className="testimonial-item" role="listitem" aria-labelledby="testimonial1">
                 <div className="student-img-container">
-                    <img src='src/images/PassingPic2.png' alt='student picture' className="student-img"/>
+                    <img src={PassingPic2} alt='student picture' className="student-img"/>
                 </div>
                 <div className="testimonial-text-container">
                     <p className="testimonial-text" id="testimonial1"> I have tried a few other local driving schools but Trinity is by far the best. I am pleased to say I was able to pass first time.</p>

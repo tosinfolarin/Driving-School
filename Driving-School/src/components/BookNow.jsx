@@ -7,7 +7,7 @@ const BookNow = () => {
             </div>
         </div>
     );
-   
+    
 }
 
 export default BookNow;
