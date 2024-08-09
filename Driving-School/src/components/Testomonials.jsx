@@ -37,7 +37,7 @@ const Testimonials = () => {
                 {/* 'src/images/ipassed.jpeg'  */}
                 </div>
                 <div className="testimonial-text-container">
-                    <p className="testimonial-text"> I am very pleased with the way my driving lessons have gone. I was able to score very highly in my theory exam and passed with only 2 minor faults. </p>
+                    <p className="testimonial-text"> I am very pleased with the way my driving lessons have gone. I was able to score very highly in my theory exam and passed the practical without any faults. </p>
                 </div>
             </div>
         </div>
